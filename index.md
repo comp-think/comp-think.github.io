@@ -4,3 +4,4 @@ This is the official book written for the *Computational Thinking and Programmin
 
 **Table of Contents**
 1. Introduction to Computational Thinking [[PDF]](book/01.pdf)
+2. Algorithms [[PDF]](book/02.pdf)
