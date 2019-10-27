@@ -7,9 +7,11 @@ This is the official book written for the *Computational Thinking and Programmin
 2. Algorithms [[PDF]](book/02.pdf)
 3. Computability [[PDF]](book/03.pdf)
 4. Programming languages [[PDF]](book/04.pdf)
+5. Organising information: ordered structures [[PDF]](book/05.pdf)
 
 **Python code available in each chapter**
 1. None
 2. None
 3. None
-4. [first_algorithm_empty.py](python/first_algorithm_empty.py), [first_algorithm_no_assignments.py](python/first_algorithm_no_assignments.py), [first_algorithm.py](python/first_algorithm.py) 
+4. [first_algorithm_empty.py](python/first_algorithm_empty.py), [first_algorithm_no_assignments.py](python/first_algorithm_no_assignments.py), [first_algorithm.py](python/first_algorithm.py)
+5. [define_functions.py](python/define_functions.py), [list_instructions.py](python/list_instructions.py), [stack_instructions.py](python/stack_instructions.py), [queue_instructions.py](python/queue_instructions.py)
