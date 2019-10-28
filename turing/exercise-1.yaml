@@ -1,0 +1,11 @@
+blank: '0'
+start state: A
+table:
+  A:
+    0: { write: 1, R: B }
+    1: { write: 0, L: C }
+  B:
+    0: { write: 1, L: A }
+  C:
+    0: { write: 1, L: D }
+  D:
