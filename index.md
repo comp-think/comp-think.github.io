@@ -17,3 +17,9 @@ This is the official book written for the *Computational Thinking and Programmin
 4. [first_algorithm_empty.py](python/first_algorithm_empty.py), [first_algorithm_no_assignments.py](python/first_algorithm_no_assignments.py), [first_algorithm.py](python/first_algorithm.py)
 5. [define_functions.py](python/define_functions.py), [list_instructions.py](python/list_instructions.py), [stack_instructions.py](python/stack_instructions.py), [queue_instructions.py](python/queue_instructions.py)
 6. [stack_from_list.py](python/stack_from_list.py), [run_forever.py](python/run_forever.py), [linear_search.py](python/linear_search.py), [insertion_sort.py](python/insertion_sort.py)
+
+**Keys**
+1. Exercises [1](keys/01/exercise-1.md), [2](keys/01/exercise-2.md), [3](keys/01/exercise-3.md)
+2. Exercises [1](keys/02/exercise-1.md), [2](keys/02/exercise-2.png), 3([a](keys/02/exercise-3-def1.png), [b](keys/02/exercise-3-def2.png))
+3. Exercises [1](keys/03/exercise-1.yaml), [2](keys/03/exercise-2.yaml), [3](keys/03/exercise-3.yaml)
+4. Exercises [1](keys/04/exercise-1.md), [2](keys/04/exercise-2.md), [3](keys/04/exercise-3.py)
