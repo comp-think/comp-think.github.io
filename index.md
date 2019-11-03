@@ -1,16 +1,38 @@
-# Computational Thinking and Programming
+# The book
 
-This is the official book written for the *Computational Thinking and Programming* course of the second-cycle degree in *Digital Humanities and Digital Knowledge* of the University of Bologna.
+This is the official book originally written by [Silvio Peroni](https://essepuntato.it) for the [*Computational Thinking and Programming* course](https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/424624) of the [second-cycle degree in *Digital Humanities and Digital Knowledge*](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge) of the [University of Bologna](https://www.unibo.it/en). The intent of this book was to have open and free material to provide to students to learn the basics of Computational Thinking and Code Programming in Python. 
 
-**Table of Contents**
+It includes several Python sources, exercises and the related keys. Each chapter starts by introducing an *historic hero* (either computer scientists, writers, philosophers, or computational agents) who is functional to discuss the main topic addressed in the chapter. 
+
+
+## Table of Contents
+
 1. Introduction to Computational Thinking [[PDF]](book/01.pdf)
-2. Algorithms [[PDF]](book/02.pdf)
-3. Computability [[PDF]](book/03.pdf)
-4. Programming languages [[PDF]](book/04.pdf)
-5. Organising information: ordered structures [[PDF]](book/05.pdf)
-6. Brute-force algorithms [[PDF]](book/06.pdf)
+   
+   Historic hero: [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky)
 
-**Python code available in each chapter**
+2. Algorithms [[PDF]](book/02.pdf)
+   
+   Historic hero: [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)
+
+3. Computability [[PDF]](book/03.pdf)
+   
+   Historic hero: [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
+
+4. Programming languages [[PDF]](book/04.pdf)
+   
+   Historic hero: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
+
+5. Organising information: ordered structures [[PDF]](book/05.pdf)
+   
+   Historic hero: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+
+6. Brute-force algorithms [[PDF]](book/06.pdf)
+   
+   Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
+
+
+## Python code available in each chapter
 1. None
 2. None
 3. None
@@ -18,8 +40,10 @@ This is the official book written for the *Computational Thinking and Programmin
 5. [define_functions.py](python/define_functions.py), [list_instructions.py](python/list_instructions.py), [stack_instructions.py](python/stack_instructions.py), [queue_instructions.py](python/queue_instructions.py)
 6. [stack_from_list.py](python/stack_from_list.py), [run_forever.py](python/run_forever.py), [linear_search.py](python/linear_search.py), [insertion_sort.py](python/insertion_sort.py)
 
-**Keys**
-1. Exercises [1](keys/01/exercise-1.md), [2](keys/01/exercise-2.md), [3](keys/01/exercise-3.md)
-2. Exercises [1](keys/02/exercise-1.md), [2](keys/02/exercise-2.png), 3([a](keys/02/exercise-3-def1.png), [b](keys/02/exercise-3-def2.png))
-3. Exercises [1](keys/03/exercise-1.yaml), [2](keys/03/exercise-2.yaml), [3](keys/03/exercise-3.yaml)
-4. Exercises [1](keys/04/exercise-1.md), [2](keys/04/exercise-2.md), [3](keys/04/exercise-3.py)
+
+## Keys of the exercises in each chapter
+
+1. Exercises [1](keys/01/exercise-1), [2](keys/01/exercise-2), [3](keys/01/exercise-3)
+2. Exercises [1](keys/02/exercise-1), [2](keys/02/exercise-2), [3](keys/02/exercise-3)
+3. Exercises [1](keys/03/exercise-1), [2](keys/03/exercise-2), [3](keys/03/exercise-3)
+4. Exercises [1](keys/04/exercise-1), [2](keys/04/exercise-2), [3](keys/04/exercise-3)
