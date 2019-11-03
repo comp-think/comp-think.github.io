@@ -1,8 +1,10 @@
-# The book
+# Computational Thinking and Programming
 
 This is the official book originally written by [Silvio Peroni](https://essepuntato.it) for the [*Computational Thinking and Programming* course](https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2019/424624) of the [second-cycle degree in *Digital Humanities and Digital Knowledge*](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge) of the [University of Bologna](https://www.unibo.it/en). The intent of this book was to have open and free material to provide to students to learn the basics of Computational Thinking and Code Programming in Python. 
 
 It includes several Python sources, exercises and the related keys. Each chapter starts by introducing an *historic hero* (either computer scientists, writers, philosophers, or computational agents) who is functional to discuss the main topic addressed in the chapter. 
+
+Please do not hesitate to contact the author for any suggestion and comment on the book on [Twitter](https://twitter.com/essepuntato) or by [email](mailto:essepuntato@gmail.com).
 
 
 ## Table of Contents
