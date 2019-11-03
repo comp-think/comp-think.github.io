@@ -8,28 +8,22 @@ It includes several Python sources, exercises and the related keys. Each chapter
 ## Table of Contents
 
 1. Introduction to Computational Thinking [[PDF]](book/01.pdf)
-   
-   Historic hero: [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky)
+   <br />Historic hero: [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky)
 
 2. Algorithms [[PDF]](book/02.pdf)
-   
-   Historic hero: [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)
+   <br />Historic hero: [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)
 
 3. Computability [[PDF]](book/03.pdf)
-   
-   Historic hero: [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
+   <br />Historic hero: [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
 
 4. Programming languages [[PDF]](book/04.pdf)
-   
-   Historic hero: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
+   <br />Historic hero: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
 
 5. Organising information: ordered structures [[PDF]](book/05.pdf)
-   
-   Historic hero: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
+   <br />Historic hero: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
 
 6. Brute-force algorithms [[PDF]](book/06.pdf)
-   
-   Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
+   <br />Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
 
 
 ## Python code available in each chapter
