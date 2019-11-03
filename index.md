@@ -43,3 +43,14 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 2. Exercises [1](keys/02/exercise-1), [2](keys/02/exercise-2), [3](keys/02/exercise-3)
 3. Exercises [1](keys/03/exercise-1), [2](keys/03/exercise-2), [3](keys/03/exercise-3)
 4. Exercises [1](keys/04/exercise-1), [2](keys/04/exercise-2), [3](keys/04/exercise-3)
+
+
+## License
+
+All the documents (chapters, exercises, etc.) are released under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode). For all the third party material used in any document, the license explicitly specified on such material is used. 
+
+All the software has been released with an [ISC License](https://opensource.org/licenses/isc). 
+
+All the data are released under a [CC0 1.0 Universal (CC0 1.0) - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/legalcode).
+
+The licenses mentioned above apply to all the entities unless otherwise specified. More information about the licenses are available on the [GitHub repository](https://github.com/comp-think/comp-think.github.io/blob/master/LICENSE.md) of the book.
