@@ -1,1 +1,1 @@
-<object width="900" height="900" data="exercise-3.py"></object>
+<object width="900" height="900" data="https://comp-think.github.io/keys/04/exercise-3.py"></object>
