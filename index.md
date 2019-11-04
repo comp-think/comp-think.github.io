@@ -9,22 +9,22 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 ## Table of Contents
 
-1. Introduction to Computational Thinking [[PDF]](book/01.pdf) [[Google Docs]((book/01)]
+1. Introduction to Computational Thinking [[PDF]](book/01.pdf) [[Google Docs]](book/01)
    <br />Historic hero: [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky)
 
-2. Algorithms [[PDF]](book/02.pdf) [[Google Docs]((book/02)]
+2. Algorithms [[PDF]](book/02.pdf) [[Google Docs]](book/02)
    <br />Historic hero: [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)
 
-3. Computability [[PDF]](book/03.pdf) [[Google Docs]((book/03)]
+3. Computability [[PDF]](book/03.pdf) [[Google Docs]](book/03)
    <br />Historic hero: [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
 
-4. Programming languages [[PDF]](book/04.pdf) [[Google Docs]((book/04)]
+4. Programming languages [[PDF]](book/04.pdf) [[Google Docs]](book/04)
    <br />Historic hero: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
 
-5. Organising information: ordered structures [[PDF]](book/05.pdf) [[Google Docs]((book/05)]
+5. Organising information: ordered structures [[PDF]](book/05.pdf) [[Google Docs]](book/05)
    <br />Historic hero: [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
 
-6. Brute-force algorithms [[PDF]](book/06.pdf) [[Google Docs]((book/06)]
+6. Brute-force algorithms [[PDF]](book/06.pdf) [[Google Docs]](book/06)
    <br />Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
 
 
