@@ -28,6 +28,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
    <br />Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
 
 7. Organising information: unordered structures [[PDF]](book/07.pdf) [[Google Docs]](book/07)
+   <br />Historic hero: [Jorge Luis Borges](https://en.wikipedia.org/wiki/Jorge_Luis_Borges)
 
 
 ## Python code available in each chapter
