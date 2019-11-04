@@ -27,6 +27,8 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 6. Brute-force algorithms [[PDF]](book/06.pdf) [[Google Docs]](book/06)
    <br />Historic hero: [Betty Holberton](https://en.wikipedia.org/wiki/Betty_Holberton)
 
+7. Organising information: unordered structures [[PDF]](book/07.pdf) [[Google Docs]](book/07)
+
 
 ## Python code available in each chapter
 1. None
@@ -35,6 +37,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 4. [first_algorithm_empty.py](python/first_algorithm_empty.py), [first_algorithm_no_assignments.py](python/first_algorithm_no_assignments.py), [first_algorithm.py](python/first_algorithm.py)
 5. [define_functions.py](python/define_functions.py), [list_instructions.py](python/list_instructions.py), [stack_instructions.py](python/stack_instructions.py), [queue_instructions.py](python/queue_instructions.py)
 6. [stack_from_list.py](python/stack_from_list.py), [run_forever.py](python/run_forever.py), [linear_search.py](python/linear_search.py), [insertion_sort.py](python/insertion_sort.py)
+7. [set_instructions.py](python/set_instructions.py), [dictionary_instructions.py](python/dictionary_instructions.py)
 
 
 ## Keys of the exercises in each chapter
@@ -47,7 +50,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 ## Additional material
 
-**Atari Go**: A [DIY](https://en.wikipedia.org/wiki/Do_it_yourself) version of a famous [variant of Go](https://senseis.xmp.net/?AtariGo) which is useful to learn the basics of the game.
+[**Atari Go**](material/atari-go.pdf): A [DIY](https://en.wikipedia.org/wiki/Do_it_yourself) version of a famous [variant of Go](https://senseis.xmp.net/?AtariGo) which is useful to learn the basics of the game. It is also available (and citable) on Zenodo: 
+
+> Peroni, Silvio. (2018). Atari Go (Version 1.0.1). Zenodo. https://doi.org/10.5281/zenodo.2222272
 
 
 ## License
