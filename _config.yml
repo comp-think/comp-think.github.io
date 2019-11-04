@@ -2,3 +2,5 @@ title: The CTP Book
 description: A book for teaching Computational Thinking and Programming skills to people with a background in the Humanities
 show_downloads: false
 theme: jekyll-theme-hacker
+plugins:
+  - jekyll-redirect-from

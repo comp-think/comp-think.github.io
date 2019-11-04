@@ -45,6 +45,11 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 4. Exercises [1](keys/04/exercise-1), [2](keys/04/exercise-2), [3](keys/04/exercise-3)
 
 
+## Additional material
+
+**Atari Go**: A [DIY](https://en.wikipedia.org/wiki/Do_it_yourself) version of a famous [variant of Go](https://senseis.xmp.net/?AtariGo) which is useful to learn the basics of the game.
+
+
 ## License
 
 All the documents (chapters, exercises, etc.) are released under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/legalcode). For all the third party material used in any document, the license explicitly specified on such material is used. 
