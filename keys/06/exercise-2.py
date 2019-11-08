@@ -13,27 +13,28 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 
+from collections import deque
 
-# Test case for the algorithm
-def test_linear_search(input_list, value_to_search, expected):
-    result = linear_search(input_list, value_to_search)
+
+# Test case for the function
+def test_stack_from_list(input_list, expected):
+    result = stack_from_list(input_list)
     if expected == result:
         return True
     else:
         return False
 
+# Code of the function
+def stack_from_list(input_list):
+    output_stack = deque()  # the stack to create
 
-# Code of the algorithm
-def linear_search(input_list, value_to_search):
-    # iterate all the items in the input list, getting also their position on the list
-    for position, item in enumerate(input_list):
-        # check if the current item is equal to the value to search
-        if item == value_to_search:
-            # if so, the position of the current item is returned and the algorithm stops
-            return position
+    # Iterate each element in the input list and add it to the stack
+    for item in input_list:
+        output_stack.append(item)
+
+    return output_stack
 
 
 # Three different test runs
-print(test_linear_search([1, 2, 3, 4, 5], 3, 2))
-print(test_linear_search(["Alice", "Catherine", "Bob", "Charles"], "Denver", None))
-print(test_linear_search(["Ron", "Harry", "Hermione"], "Ron", 0))
+print(test_stack_from_list([], deque()))
+print(test_stack_from_list([1, 2, 3, 4, 5], deque([1, 2, 3, 4, 5])))
