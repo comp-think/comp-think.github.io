@@ -30,6 +30,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 7. Organising information: unordered structures [[PDF]](book/07.pdf) [[Google Docs]](book/07)
    <br />Historic hero: [Jorge Luis Borges](https://en.wikipedia.org/wiki/Jorge_Luis_Borges)
 
+8. Recursion [[PDF]](book/08.pdf) [[Google Docs]](book/08)
+   <br />Historic hero: [Douglas Hofstadter](https://en.wikipedia.org/wiki/Douglas_Hofstadter)
+
 
 ## Python code available in each chapter
 1. None
@@ -39,6 +42,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 5. [define_functions.py](python/define_functions.py), [list_instructions.py](python/list_instructions.py), [stack_instructions.py](python/stack_instructions.py), [queue_instructions.py](python/queue_instructions.py)
 6. [stack_from_list.py](python/stack_from_list.py), [run_forever.py](python/run_forever.py), [linear_search.py](python/linear_search.py), [insertion_sort.py](python/insertion_sort.py)
 7. [set_instructions.py](python/set_instructions.py), [dictionary_instructions.py](python/dictionary_instructions.py)
+8. [run_forever_recursive.py](python/run_forever_recursive.py), [multiplication.py](python/multiplication.py)
 
 
 ## Keys of the exercises in each chapter
@@ -55,7 +59,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 [**Atari Go**](material/atari-go.pdf): A [DIY](https://en.wikipedia.org/wiki/Do_it_yourself) version of a famous [variant of Go](https://senseis.xmp.net/?AtariGo) which is useful to learn the basics of the game. It is also available (and citable) on Zenodo: 
 
-> Peroni, Silvio. (2018). Atari Go (Version 1.0.1). Zenodo. https://doi.org/10.5281/zenodo.2222272
+> Peroni, S. (2018). Atari Go. Version 1.0.1. Zenodo. [https://doi.org/10.5281/zenodo.2222272](https://doi.org/10.5281/zenodo.2222272)
 
 
 ## License
