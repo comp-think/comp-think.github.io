@@ -53,6 +53,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 4. Exercises [1](keys/04/exercise-1), [2](keys/04/exercise-2), [3](keys/04/exercise-3)
 5. Exercises [1](keys/05/exercise-1), [2](keys/05/exercise-2), [3](keys/05/exercise-3)
 6. Exercises [1](keys/06/exercise-1), [2](keys/06/exercise-2), [3](keys/06/exercise-3), [4](keys/06/exercise-4), [5](keys/06/exercise-5)
+7. Exercises [1](keys/07/exercise-1), [2](keys/07/exercise-2), [3](keys/07/exercise-3)
 
 
 ## Additional material
