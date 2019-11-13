@@ -4,6 +4,8 @@ This is the official book originally written by [Silvio Peroni](https://essepunt
 
 It includes several Python sources, exercises and the related keys. Each chapter starts by introducing an *historic hero* (either computer scientists, writers, philosophers, or computational agents) who is functional to discuss the main topic addressed in the chapter. 
 
+Also, the book is accompanied by additional material and exercises so as to improve computational thinking skills and Python programming.
+
 Please do not hesitate to contact the author for any suggestion and comment on the book on [Twitter](https://twitter.com/essepuntato) or by [email](mailto:essepuntato@gmail.com).
 
 
@@ -54,6 +56,24 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 5. Exercises [1](keys/05/exercise-1), [2](keys/05/exercise-2), [3](keys/05/exercise-3)
 6. Exercises [1](keys/06/exercise-1), [2](keys/06/exercise-2), [3](keys/06/exercise-3), [4](keys/06/exercise-4), [5](keys/06/exercise-5)
 7. Exercises [1](keys/07/exercise-1), [2](keys/07/exercise-2), [3](keys/07/exercise-3)
+
+
+## Additional exercises
+The exercises in this section focus in enhancing the two main activities that concern the learning of a new language (including a programming language), i.e. *understanding* something written in a certain language, and using such language to *develop* a new artifact. All the exercises proposed herein are split according to three distinct and increasing levels: *beginner*, *intermediate*, *advanced*.
+
+### Understanding
+The exercises of this section focus on figuring out the execution of a particular piece of Python code according to a given input. The goal is to test a user to act as an electronic computer when executing a certain Python function. All the exercises of this section are accompanied by the related executable code, which allows one to test what is the output of the functions considering the particular input one can specify through the shell.
+
+* Beginner: *none, so far*
+* Intermediate: [1](exercises/understanding/intermediate/exercise-1)
+* Advanced: *none, so far*
+
+### Development
+The exercises of this section focus on creating a Python function according to a natural language description of its input, output, and behaviour. The goal is to test a user to write a program that can be interpreted by an electronic computer. All the exercises of this section are accompanied by the related executable code, which includes also the tests created as part of the test-driven development methodology introduced in [chapter "Programming Language"](book/04.pdf). This chapter also introduces a possible methodology to follow for the development of an algorithm as a Python function, that can be used as basis to solve the exercises in this section. 
+
+* Beginner: *none, so far*
+* Intermediate: [1](exercises/development/intermediate/exercise-1), [2](exercises/development/intermediate/exercise-2)
+* Advanced: *none, so far*
 
 
 ## Additional material
