@@ -35,6 +35,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 8. Recursion [[PDF]](book/08.pdf) [[Google Docs]](book/08)
    <br />Historic hero: [Douglas Hofstadter](https://en.wikipedia.org/wiki/Douglas_Hofstadter)
 
+9. Divide and conquer algorithms [[PDF]](book/09.pdf) [[Google Docs]](book/09)
+   <br />Historic hero: [John von Neumann](hhttps://en.wikipedia.org/wiki/John_von_Neumann)
+
 
 ## Python code available in each chapter
 1. None
@@ -45,6 +48,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 6. [stack_from_list.py](python/stack_from_list.py), [run_forever.py](python/run_forever.py), [linear_search.py](python/linear_search.py), [insertion_sort.py](python/insertion_sort.py)
 7. [set_instructions.py](python/set_instructions.py), [dictionary_instructions.py](python/dictionary_instructions.py)
 8. [run_forever_recursive.py](python/run_forever_recursive.py), [multiplication.py](python/multiplication.py)
+9. [immutable_values.py](python/immutable_values.py), [mutable_values.py](python/mutable_values.py), [immutable_and_mutable_variables.py](python/immutable_and_mutable_variables.py), [merge.py](python/merge.py), [merge_sort.py](python/merge_sort.py)
 
 
 ## Keys of the exercises in each chapter
@@ -81,6 +85,12 @@ The exercises of this section focus on creating a Python function according to a
 [**Atari Go**](material/atari-go.pdf): A [DIY](https://en.wikipedia.org/wiki/Do_it_yourself) version of a famous [variant of Go](https://senseis.xmp.net/?AtariGo) which is useful to learn the basics of the game. It is also available (and citable) on Zenodo: 
 
 > Peroni, S. (2018). Atari Go. Version 1.0.1. Zenodo. [https://doi.org/10.5281/zenodo.2222272](https://doi.org/10.5281/zenodo.2222272)
+
+[**IDEA instructions: binary search**](material/binary-search.pdf): A nonverbal definition of the binary search algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/binary-search/).
+
+[**IDEA instructions: merge sort**](material/merge-sort.pdf): A nonverbal definition of the merge sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/merge-sort/).
+
+[**IDEA instructions: quick sort**](material/merge-sort.pdf): A nonverbal definition of the quick sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/quick-sort/).
 
 
 ## License
