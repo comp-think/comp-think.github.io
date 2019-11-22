@@ -38,6 +38,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 9. Divide and conquer algorithms [[PDF]](book/09.pdf) [[Google Docs]](book/09)
    <br />Historic hero: [John von Neumann](hhttps://en.wikipedia.org/wiki/John_von_Neumann)
 
+9. Dynamic programming algorithms [[PDF]](book/10.pdf) [[Google Docs]](book/10)
+   <br />Historic hero: [Leonardo da Pisa](https://en.wikipedia.org/wiki/Fibonacci)
+
 
 ## Python code available in each chapter
 1. None
@@ -49,6 +52,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 7. [set_instructions.py](python/set_instructions.py), [dictionary_instructions.py](python/dictionary_instructions.py)
 8. [run_forever_recursive.py](python/run_forever_recursive.py), [multiplication.py](python/multiplication.py)
 9. [immutable_values.py](python/immutable_values.py), [mutable_values.py](python/mutable_values.py), [immutable_and_mutable_variables.py](python/immutable_and_mutable_variables.py), [merge.py](python/merge.py), [merge_sort.py](python/merge_sort.py)
+10. [fib_dc.py](python/fib_dc.py), [fib_dp.py](python/fib_dp.py)
 
 
 ## Keys of the exercises in each chapter
