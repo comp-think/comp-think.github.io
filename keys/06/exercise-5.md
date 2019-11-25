@@ -30,4 +30,4 @@ print(test_my_reversed(["a", "b", "c", "d"], ["d", "c", "b", "a"]))
 ```
 
 ### Additional material
-The runnable [Python file](exercise-5.py) is available online.
+The runnable [Python file](exercise_5.py) is available online.

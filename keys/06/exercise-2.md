@@ -30,5 +30,5 @@ print(test_stack_from_list([1, 2, 3, 4, 5], deque([1, 2, 3, 4, 5])))
 ```
 
 ### Additional material
-The runnable [Python file](exercise-2.py) is available online.
+The runnable [Python file](exercise_2.py) is available online.
 

@@ -37,4 +37,4 @@ print(test_contains_word("References", "1983",
 ```
 
 ### Additional material
-The runnable [Python file](exercise-3.py) is available online.
+The runnable [Python file](exercise_3.py) is available online.

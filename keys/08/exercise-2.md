@@ -33,4 +33,4 @@ print(test_fib(-15, 0))
 ```
 
 ### Additional material
-The runnable [Python file](exercise-1.py) is available online.
+The runnable [Python file](exercise_2.py) is available online.

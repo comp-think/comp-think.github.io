@@ -21,4 +21,4 @@ my_dict["magician"] = set_magician
 ```
 
 ### Additional material
-The runnable [Python file](exercise-3.py) is available online.
+The runnable [Python file](exercise_3.py) is available online.

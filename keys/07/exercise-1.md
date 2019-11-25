@@ -14,4 +14,4 @@ my_set.add("Merry")
 ```
 
 ### Additional material
-The runnable [Python file](exercise-1.py) is available online.
+The runnable [Python file](exercise_1.py) is available online.

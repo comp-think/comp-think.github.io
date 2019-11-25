@@ -30,4 +30,4 @@ print(test_exponentation(0, 0, 1))
 ```
 
 ### Additional material
-The runnable [Python file](exercise-1.py) is available online.
+The runnable [Python file](exercise_1.py) is available online.

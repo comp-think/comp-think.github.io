@@ -28,4 +28,4 @@ print(test_my_enumerate(["a", "b", "c"], [(0, "a"), (1, "b"), (2, "c")]))
 ```
 
 ### Additional material
-The runnable [Python file](exercise-3.py) is available online.
+The runnable [Python file](exercise_3.py) is available online.
