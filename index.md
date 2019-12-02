@@ -38,8 +38,11 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 9. Divide and conquer algorithms [[PDF]](book/09.pdf) [[Google Docs]](book/09)
    <br />Historic hero: [John von Neumann](hhttps://en.wikipedia.org/wiki/John_von_Neumann)
 
-9. Dynamic programming algorithms [[PDF]](book/10.pdf) [[Google Docs]](book/10)
+10. Dynamic programming algorithms [[PDF]](book/10.pdf) [[Google Docs]](book/10)
    <br />Historic hero: [Leonardo da Pisa](https://en.wikipedia.org/wiki/Fibonacci)
+
+11. Organising information: trees [[PDF]](book/11.pdf) [[Google Docs]](book/11)
+   <br />Historic hero: [Gabriel García Márquez](https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez)
 
 
 ## Python code available in each chapter
