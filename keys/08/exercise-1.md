@@ -5,7 +5,7 @@ Define a recursive function `def exponentiation(base_number, exponent)` for impl
 
 ### Answer
 ```python
-# Test case for the algorithm
+# Test case for the function
 def test_exponentation(base_number, exponent, expected):
     result = exponentation(base_number, exponent)
     if expected == result:
@@ -14,7 +14,7 @@ def test_exponentation(base_number, exponent, expected):
         return False
 
 
-# Code of the algorithm
+# Code of the function
 def exponentation(base_number, exponent):
     if exponent == 0:
         return 1
@@ -22,6 +22,7 @@ def exponentation(base_number, exponent):
         return base_number * exponentation(base_number, exponent - 1)
 
 
+# Tests
 print(test_exponentation(3, 4, 81))
 print(test_exponentation(17, 1, 17))
 print(test_exponentation(2, 0, 1))
