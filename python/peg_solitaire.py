@@ -86,9 +86,9 @@ def valid_moves(pegs, holes):
 
 def apply_move(node, pegs, holes):
     move = node.name
-    old_pos = move["move"]
-    new_pos = move["in"]
-    eat_pos = move["remove"]
+    old_pos = move.get("move")
+    new_pos = move.get("in")
+    eat_pos = move.get("remove")
 
     pegs.remove(old_pos)
     holes.add(old_pos)
@@ -102,9 +102,9 @@ def apply_move(node, pegs, holes):
 
 def undo_move(node, pegs, holes):
     move = node.name
-    old_pos = move["move"]
-    new_pos = move["in"]
-    eat_pos = move["remove"]
+    old_pos = move.get("move")
+    new_pos = move.get("in")
+    eat_pos = move.get("remove")
 
     pegs.add(old_pos)
     holes.remove(old_pos)

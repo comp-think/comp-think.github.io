@@ -43,6 +43,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 11. Organising information: trees [[PDF]](book/11.pdf) [[Google Docs]](book/11)
    <br />Historic hero: [Gabriel García Márquez](https://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez)
+   
+12. Backtracking algorithms [[PDF]](book/12.pdf) [[Google Docs]](book/12)
+   <br />Historic hero: [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)
 
 
 ## Python code available in each chapter
@@ -57,6 +60,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 9. [immutable_values.py](python/immutable_values.py), [mutable_values.py](python/mutable_values.py), [immutable_and_mutable_variables.py](python/immutable_and_mutable_variables.py), [merge.py](python/merge.py), [merge_sort.py](python/merge_sort.py)
 10. [fib_dc.py](python/fib_dc.py), [fib_dp.py](python/fib_dp.py)
 11. [tree_instructions.py](python/tree_instructions.py)
+12. [peg_solitaire.py](python/peg_solitaire.py)
 
 
 ## Keys of the exercises in each chapter
