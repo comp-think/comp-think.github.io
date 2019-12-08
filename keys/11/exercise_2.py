@@ -39,12 +39,6 @@ def breadth_first_visit(root_node):
     return result
 
 
-def add_to_level(node, level, levels):
-    if level not in levels:
-        levels[level] = []
-    levels[level].append(node)
-
-
 # Tests
 book = Node("book")
 chapter_1 = Node("chapter1", book)
