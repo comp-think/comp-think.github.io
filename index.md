@@ -47,6 +47,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 12. Backtracking algorithms [[PDF]](book/12.pdf) [[Google Docs]](book/12)
    <br />Historic hero: [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo)
 
+13. Organising information: graphs [[PDF]](book/13.pdf) [[Google Docs]](book/13)
+   <br />Historic hero: [Leonhard Euler](hhttps://en.wikipedia.org/wiki/Leonhard_Euler)
+
 
 ## Python code available in each chapter
 1. None
@@ -61,6 +64,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 10. [fib_dc.py](python/fib_dc.py), [fib_dp.py](python/fib_dp.py)
 11. [tree_instructions.py](python/tree_instructions.py)
 12. [peg_solitaire.py](python/peg_solitaire.py)
+13. [graph_instructions.py](python/graph_instructions.py), [multigraph_instructions.py](python/multigraph_instructions.py), [graph_attribute_instructions.py](python/graph_attribute_instructions.py)
 
 
 ## Keys of the exercises in each chapter
@@ -75,6 +79,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 8. Exercises [1](keys/08/exercise-1), [2](keys/08/exercise-2)
 9. Exercises [1](keys/09/exercise-1), [2](keys/09/exercise-2), [3](keys/09/exercise-3)
 10. Exercises [1](keys/10/exercise-1), [2](keys/10/exercise-2)
+11. Exercises [1](keys/11/exercise-1), [2](keys/11/exercise-2)
 
 
 ## Additional exercises
