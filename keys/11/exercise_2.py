@@ -28,8 +28,9 @@ def test_breadth_first_visit(root_node, expected):
 
 # Code of the function
 def breadth_first_visit(root_node):
-    result = []
-    to_visit = deque([root_node])
+    result = list()
+    to_visit = deque()
+    to_visit.append(root_node)
 
     while to_visit:
         node_to_visit = to_visit.popleft()
