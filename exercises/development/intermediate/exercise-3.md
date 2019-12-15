@@ -3,7 +3,7 @@
 ### Text
 Write the body of the Python function `def depth_first_visit(node)` that takes the root node of a tree as input and returns the list of all its nodes ordered according to a depth-first visit. The depth-first visit proceeds as indicated in the [image below](https://en.wikipedia.org/wiki/Depth-first_search#/media/File:Depth-first-tree.svg), created by [Alexander Drichel](https://commons.wikimedia.org/wiki/User:Alexander_Drichel), where the numbers indicate the order in which the nodes should be visited.
 
-![Depth-first visit](img/depth_first_visit.png)
+<img src="img/depth_first_visit.png" alt="Depth-first visit" style="max-width:150px;" />
 
 
 ### Solution
