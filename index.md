@@ -49,6 +49,9 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 13. Organising information: graphs [[PDF]](book/13.pdf) [[Google Docs]](book/13)
    <br />Historic hero: [Leonhard Euler](hhttps://en.wikipedia.org/wiki/Leonhard_Euler)
+   
+14. Greedy algorithms [[PDF]](book/14.pdf) [[Google Docs]](book/14)
+   <br />Historic hero: [Evelyn Berezin](https://en.wikipedia.org/wiki/Evelyn_Berezin)
 
 
 ## Python code available in each chapter
@@ -65,6 +68,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 11. [tree_instructions.py](python/tree_instructions.py)
 12. [peg_solitaire.py](python/peg_solitaire.py)
 13. [graph_instructions.py](python/graph_instructions.py), [multigraph_instructions.py](python/multigraph_instructions.py), [graph_attribute_instructions.py](python/graph_attribute_instructions.py)
+14. [line_wrap.py](python/line_wrap.py)
 
 
 ## Keys of the exercises in each chapter
