@@ -46,4 +46,4 @@ print(test_do_it("just a string", 2, deque(["u", "a", "i"])))
 ``` 
 
 ### Additional material
-The runnable [Python file](exercise-1.py) is available online.
+The runnable [Python file](exercise_1.py) is available online.

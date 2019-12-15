@@ -46,4 +46,4 @@ print(test_do_it("just a string", 2, deque(["j", "s", "t", "s", "t", "r", "n", "
 ``` 
 
 ### Additional material
-The runnable [Python file](exercise-2.py) is available online.
+The runnable [Python file](exercise_2.py) is available online.

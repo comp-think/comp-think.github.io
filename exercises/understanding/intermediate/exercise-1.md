@@ -24,4 +24,4 @@ def f(gn_list, fn_list, cur_number):
 Depending on the particular input specified, the function can have two distinct behaviours. On the one hand, it may return a tuple containing a character and the first position where such character appears in the family name provided as input. On the other hand, it will run forever in case no `return` statement is not executed.
 
 ### Additional material
-The runnable [Python file](exercise-1.py) is available online. You can run it executing the command `python exercise-1.py` in a shell, and then following the instructions on screen to specify the intended input.
+The runnable [Python file](exercise_1.py) is available online. You can run it executing the command `python exercise_1.py` in a shell, and then following the instructions on screen to specify the intended input.

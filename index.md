@@ -80,6 +80,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 9. Exercises [1](keys/09/exercise-1), [2](keys/09/exercise-2), [3](keys/09/exercise-3)
 10. Exercises [1](keys/10/exercise-1), [2](keys/10/exercise-2)
 11. Exercises [1](keys/11/exercise-1), [2](keys/11/exercise-2)
+12. Exercises [1](keys/12/exercise-1), [2](keys/12/exercise-2)
 
 
 ## Additional exercises
@@ -89,14 +90,14 @@ The exercises in this section focus in enhancing the two main activities that co
 The exercises of this section focus on figuring out the execution of a particular piece of Python code according to a given input. The goal is to test a user to act as an electronic computer when executing a certain Python function. All the exercises of this section are accompanied by the related executable code, which allows one to test what is the output of the functions considering the particular input one can specify through the shell.
 
 * Beginner: *none, so far*
-* Intermediate: [1](exercises/understanding/intermediate/exercise-1)
-* Advanced: *none, so far*
+* Intermediate: [1](exercises/understanding/intermediate/exercise-1), [2](exercises/understanding/intermediate/exercise-2)
+* Advanced: [1](exercises/understanding/advanced/exercise-1)
 
 ### Development
 The exercises of this section focus on creating a Python function according to a natural language description of its input, output, and behaviour. The goal is to test a user to write a program that can be interpreted by an electronic computer. All the exercises of this section are accompanied by the related executable code, which includes also the tests created as part of the test-driven development methodology introduced in [chapter "Programming Language"](book/04.pdf). This chapter also introduces a possible methodology to follow for the development of an algorithm as a Python function, that can be used as basis to solve the exercises in this section. 
 
 * Beginner: *none, so far*
-* Intermediate: [1](exercises/development/intermediate/exercise-1), [2](exercises/development/intermediate/exercise-2)
+* Intermediate: [1](exercises/development/intermediate/exercise-1), [2](exercises/development/intermediate/exercise-2), [3](exercises/development/intermediate/exercise-3)
 * Advanced: *none, so far*
 
 
