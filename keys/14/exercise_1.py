@@ -25,7 +25,7 @@ def test_return_change(amount, expected):
 
 # Code of the function
 def return_change(amount):
-    result = {}
+    result = dict()
     coins = [2.0, 1.0, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01]
 
     for coin in coins:
