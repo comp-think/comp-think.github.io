@@ -85,6 +85,8 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 10. Exercises [1](keys/10/exercise-1), [2](keys/10/exercise-2)
 11. Exercises [1](keys/11/exercise-1), [2](keys/11/exercise-2)
 12. Exercises [1](keys/12/exercise-1), [2](keys/12/exercise-2)
+13. Exercises [1](keys/13/exercise-1), [2](keys/13/exercise-2)
+14. Exercises [1](keys/14/exercise-1), [2](keys/14/exercise-2)
 
 
 ## Additional exercises
