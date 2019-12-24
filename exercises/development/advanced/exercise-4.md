@@ -3,7 +3,7 @@
 ### Text
 The *Sørensen–Dice coefficient* is a statistic that can be used for comparing the similarity of two strings. Sørensen–Dice's formula for comparing two input strings x and y is defined as follows:
 
-<img src="img/dice.png" alt="Sørensen–Dice coefficient" style="max-height:25px;" />
+<img src="img/dice.png" alt="Sørensen–Dice coefficient" style="max-height:40px;" />
 
 where *nt* is the number of bigrams found in both strings, *nx* is the number of bigrams in string *x*, and *ny* is the number of bigrams in string *y*. The bigrams of a string is a list of all the pairs of two consecutive characters that the string contains. For instance, the bigrams of the string `"mickey"` is the list `["mi", "ic", "ck", "ke", "ey"]`. Provided this definition, the Sørensen–Dice coefficient of the strings `"mine"` and `"finest"` is 0.5.
 

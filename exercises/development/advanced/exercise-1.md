@@ -3,7 +3,7 @@
 ### Text
 The *automated readability index* (ARI) is a readability test for English texts, designed to gauge the understandability of a text by representing the US grade level needed to comprehend such text. The formula for calculating the ARI is the following one:
 
-<img src="img/ari.png" alt="ARI" style="max-height:25px;" />
+<img src="img/ari.png" alt="ARI" style="max-height:35px;" />
 
 where *chars* is the number of letters and numbers, *words* is the number of token, and *sentences* is the number of sentences. Non-integer scores are always rounded up to the nearest whole number, so a score of 10.1 or 10.6 would be converted to 11.
 
