@@ -1,7 +1,7 @@
-## Understanding - Advanced, exercise 1
+## Understanding - Advanced, exercise 13
 
 ### Text
-The variable `my_mat_string` contains a 10-digit string - e.g. "0000123456". Study the execution of the following function passing `my_mat_string` input (i.e. `f(my_mat_string)`).
+The variable `my_mat_string` contains a string of ten 0-9 digits (e.g. `"0000123456"`). Study the execution of the following functions when they are called as follows: `f(my_mat_string)`.
 
 ```python
 def f(mat_string):
@@ -37,4 +37,4 @@ def g(mat_list, c):
 The function `f` transform the input string in another data structure, and counts something from it. The function `g`, that is called by the function `f`, is a recursive function.
 
 ### Additional material
-The runnable [Python file](exercise_1.py) is available online. You can run it executing the command `python exercise_1.py` in a shell, and then following the instructions on screen to specify the intended input.
+The runnable [Python file](exercise_13.py) is available online. You can run it executing the command `python exercise_13.py` in a shell, and then following the instructions on screen to specify the intended input.

@@ -14,34 +14,35 @@
 # SOFTWARE.
 
 
-def f(mat_string):
-    c = 0
-    lst = list()
-
-    for chr in mat_string:
-        n = int(chr)
-        lst.append(n)
-        if n / 2 != n // 2:
-            c = c + 1
-
-    return g(lst, c)
+from collections import deque
 
 
-def g(mat_list, c):
-    if c <= 0 or len(mat_list) == 0:
-        return 0
-    else:
-        v = 0
-        result = list()
+def f(fn, mn):
+    stack = deque()
+    digits = list()
 
-        for i in mat_list:
-            if v > 0:
-                result.append(i)
-            if i > 0 and v == 0:
-                v = i
+    for i in range(len(fn)):
+        j = i % len(mn)
+        digits.append(int(mn[len(mn) - 1 - j]))
 
-        return v + g(result, c - 1)
+    for idx, d in enumerate(reversed(digits)):
+        if idx < (len(digits) / 2):
+            stack.append((d, digits[idx]))
+
+    result = list()
+    for c in fn:
+        result.append(c)
+
+    while stack:
+        t = stack.pop()
+        if t[0] < len(fn) and t[1] < len(fn):
+            tmp = fn[t[0]]
+            result[t[0]] = fn[t[1]]
+            result[t[1]] = tmp
+
+    return "".join(result)
 
 
-my_mat_string = input("Please provide 10 0-9 digits: ").strip()
-print("Result:", f(my_mat_string))
+my_fn = input("Please provide a family name: ").strip().lower()
+my_mn = input("Please provide ten 0-9 digits: ").strip()
+print("Result:", f(my_fn, my_mn))
