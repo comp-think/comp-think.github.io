@@ -5,7 +5,7 @@ The *Sørensen–Dice coefficient* is a statistic that can be used for comparing
 
 <img src="img/dice.png" alt="Sørensen–Dice coefficient" style="max-height:40px;" />
 
-where *nt* is the number of bigrams found in both strings, *nx* is the number of bigrams in string *x*, and *ny* is the number of bigrams in string *y*. The bigrams of a string is a list of all the pairs of two consecutive characters that the string contains. For instance, the bigrams of the string `"mickey"` is the list `["mi", "ic", "ck", "ke", "ey"]`. Provided this definition, the Sørensen–Dice coefficient of the strings `"mine"` and `"finest"` is 0.5.
+where *n<sub>t</sub>* is the number of bigrams found in both strings, *n<sub>x</sub>* is the number of bigrams in string *x*, and *n<sub>y</sub>* is the number of bigrams in string *y*. The bigrams of a string is a list of all the pairs of two consecutive characters that the string contains. For instance, the bigrams of the string `"mickey"` is the list `["mi", "ic", "ck", "ke", "ey"]`. Provided this definition, the Sørensen–Dice coefficient of the strings `"mine"` and `"finest"` is 0.5.
 
 Write the Python function `def sd(x, y)` which takes two strings `x` and `y` as input and returns their Sørensen–Dice coefficient.
 
