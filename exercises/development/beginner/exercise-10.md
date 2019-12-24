@@ -1,4 +1,4 @@
-## Development - Beginner, exercise 19
+## Development - Beginner, exercise 10
 
 ### Text
 Write down a small function in Python that takes in input a non-empty string `s` and a positive integer number `n` and returns a new string composed by the last character of the input string repeated `n` times.
