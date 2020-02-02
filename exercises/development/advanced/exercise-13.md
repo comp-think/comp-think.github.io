@@ -23,7 +23,6 @@ Write a function in Python – `def get_good_white_moves(white, black)` – that
 # Test case for the function
 def test_get_good_white_moves(white, black, expected):
     result = get_good_white_moves(white, black)
-    print(result)
     if expected == result:
         return True
     else:

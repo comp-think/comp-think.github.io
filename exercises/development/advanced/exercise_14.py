@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_get_good_white_moves(white, black, expected):
-    result = get_good_white_moves(white, black)
+def test_caesar_cypher(msg, left_shift, shift_quantity, expected):
+    result = caesar_cypher(msg, left_shift, shift_quantity)
     if expected == result:
         return True
     else:
@@ -24,30 +24,23 @@ def test_get_good_white_moves(white, black, expected):
 
 
 # Code of the function
-def get_good_white_moves(white, black):
-    result = set([
-        (0, 0), (1, 0), (2, 0), (3, 0),
-        (0, 1), (1, 1), (2, 1), (3, 1),
-        (0, 2), (1, 2), (2, 2), (3, 2),
-        (0, 3), (1, 3), (2, 3), (3, 3)
-    ])
-    result.difference_update(white)
-    result.difference_update(black)
+def caesar_cypher(msg, left_shift, shift_quantity):
+    result = list()
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    for x, y in set(result):
-        if not have_freedom((x - 1, y), black) and not have_freedom((x + 1, y), black) and \
-                not have_freedom((x, y - 1), black) and not have_freedom((x, y + 1), black):
-            result.remove((x, y))
+    if left_shift:
+        shift_quantity = -shift_quantity
+    cypher = alphabet[shift_quantity:] + alphabet[:shift_quantity]
 
-    return result
+    for c in msg.lower():
+        if c in alphabet:
+            result.append(cypher[alphabet.index(c)])
+        else:
+            result.append(c)
 
-
-def have_freedom(t, black):
-    return 0 <= t[0] <= 3 and 0 <= t[1] <= 3 and t not in black
+    return "".join(result)
 
 
 # Tests
-print(test_get_good_white_moves(
-    {(1, 1), (0, 2), (0, 3), (1, 0)},
-    {(2, 0), (2, 1), (3, 1), (2, 2), (2, 3)},
-    {(0, 0), (0, 1), (1, 2), (1, 3), (3, 2), (3, 3)}))
+print(test_caesar_cypher("message to encrypt", True, 3, "jbppxdb ql bkzovmq"))
+print(test_caesar_cypher("message to encrypt", False, 5, "rjxxflj yt jshwduy"))

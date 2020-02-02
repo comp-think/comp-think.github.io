@@ -26,12 +26,12 @@ def test_line_wrap(text, line_width, expected):
 # Code of the function
 def line_wrap(text, line_width):
     # the list of all the lines of a document
-    result = []
+    result = list()
 
     # the maximum available space per a specific line
     space_left = line_width
     # the current line that is built
-    line = []
+    line = list()
 
     for word in text.split(" "):
         word_len = len(word)
@@ -39,7 +39,8 @@ def line_wrap(text, line_width):
         # we consider the length of the word plus one space character
         if word_len + 1 > space_left:
             result.append(" ".join(line))
-            line = [word]
+            line = list()
+            line.append(word)
             space_left = line_width - word_len
         else:
             line.append(word)

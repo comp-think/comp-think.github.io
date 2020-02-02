@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_get_good_white_moves(white, black, expected):
-    result = get_good_white_moves(white, black)
+def test_f(s, n, expected):
+    result = f(s, n)
     if expected == result:
         return True
     else:
@@ -24,30 +24,16 @@ def test_get_good_white_moves(white, black, expected):
 
 
 # Code of the function
-def get_good_white_moves(white, black):
-    result = set([
-        (0, 0), (1, 0), (2, 0), (3, 0),
-        (0, 1), (1, 1), (2, 1), (3, 1),
-        (0, 2), (1, 2), (2, 2), (3, 2),
-        (0, 3), (1, 3), (2, 3), (3, 3)
-    ])
-    result.difference_update(white)
-    result.difference_update(black)
-
-    for x, y in set(result):
-        if not have_freedom((x - 1, y), black) and not have_freedom((x + 1, y), black) and \
-                not have_freedom((x, y - 1), black) and not have_freedom((x, y + 1), black):
-            result.remove((x, y))
-
+def f(s1, s2):
+    result = set()
+    for d in "0123456789":
+        if (d in s1 and d not in s2) or (d not in s1 and d in s2):
+            result.add(d)
     return result
 
 
-def have_freedom(t, black):
-    return 0 <= t[0] <= 3 and 0 <= t[1] <= 3 and t not in black
-
-
 # Tests
-print(test_get_good_white_moves(
-    {(1, 1), (0, 2), (0, 3), (1, 0)},
-    {(2, 0), (2, 1), (3, 1), (2, 2), (2, 3)},
-    {(0, 0), (0, 1), (1, 2), (1, 3), (3, 2), (3, 3)}))
+print(test_f("alice", "bob", set()))
+print(test_f("2 books and 1 pen", "trees and 2 apples", {"1"}))
+print(test_f("odd number: 1, 3, 5, 7, 9", "even number: 2, 4, 6, 8", {"1", "2", "3", "4", "5", "6", "7", "8", "9"}))
+print(test_f("odd number: 1, 3, 5, 7, 9", "prime number: 1, 2, 3, 5, 7", {"2", "9"}))
