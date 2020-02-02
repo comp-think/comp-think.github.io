@@ -1,7 +1,7 @@
 ## Understanding - Advanced, exercise 14
 
 ### Text
-The variable `my_mat_l` contains a list of integers, each being a 0-9 digit (e.g. [0, 0, 0, 0, 1, 2, 3, 4, 5, 6]), and the variable `my_fn` contains a string of a family name in lower case. Study the execution of the following functions when they are called as follows: `run(my_fn, my_mat_l)`.
+The variable `my_mat_l` contains a list of integers, each being a 0-9 digit (e.g. `[0, 0, 0, 0, 1, 2, 3, 4, 5, 6]`), and the variable `my_fn` contains a string of a family name in lower case. Study the execution of the following functions when they are called as follows: `run(my_fn, my_mat_l)`.
 
 ```python
 def run(fn, mat_l):
