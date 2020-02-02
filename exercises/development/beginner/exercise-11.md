@@ -1,4 +1,4 @@
-## Development - Beginner, exercise 10
+## Development - Beginner, exercise 11
 
 ### Text
 Write down a small function in Python that takes in input two strings and returns the set of all the digit characters they do not have in common.
