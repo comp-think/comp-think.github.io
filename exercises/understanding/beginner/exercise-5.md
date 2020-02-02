@@ -15,7 +15,7 @@ def f(s, n):
 Write down the value that is returned by the function above when called as follows: `f("42", 1)`
 
 ### Solution
-"424242"
+`"424242"`
 
 ### Additional material
 The runnable [Python file](exercise_5.py) is available online. You can run it executing the command `python exercise_5.py` in a shell.

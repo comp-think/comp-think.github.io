@@ -15,7 +15,7 @@ def f(s1, s2, n):
 Write down the value that is returned by the function above when called as follows: `f("donald", "duck", 4)`
 
 ### Solution
-2
+`2`
 
 ### Additional material
 The runnable [Python file](exercise_4.py) is available online. You can run it executing the command `python exercise_4.py` in a shell.
