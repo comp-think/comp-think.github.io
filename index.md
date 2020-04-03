@@ -119,7 +119,7 @@ The exercises of this section focus on creating a Python function according to a
 
 [**IDEA instructions: quick sort**](material/merge-sort.pdf): A nonverbal definition of the quick sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/quick-sort/).
 
-[**Computer Science - Khan Academy**](https://www.khanacademy.org/computing/computer-science): a collection of video and material introducing several Computer Science concepts, including an entire section on [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms).
+[**Computer Science - Khan Academy**](https://www.khanacademy.org/computing/computer-science): a collection of videos and material introducing several Computer Science concepts, including an entire section on [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms).
 
 [**How To Code in Python**](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python): a book written by [Lisa Tagliaferri](https://twitter.com/lisaironcutter) containing a series of tutorials around the Python world, available in [PDF](https://assets.digitalocean.com/books/python/how-to-code-in-python.pdf) and [EPUB](https://do.co/python-book-epub). 
 
