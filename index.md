@@ -11,7 +11,7 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 ## Table of Contents
 
-<ol type="a">
+<ol type="i">
   <li>Preface <a href="book/00.pdf">[PDF]</a> <a href="book/00">[Google Docs]</a></li>
 </ol> 
 
