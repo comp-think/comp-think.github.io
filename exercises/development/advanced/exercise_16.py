@@ -25,13 +25,16 @@ def test_co_citation(doc_1, doc_2, list_of_docs, expected):
 
 # Code of the function
 def co_citation(doc_1, doc_2, list_of_docs):
-    co_citation_index = 0
+    if list_of_docs:
+        co_citation_index = 0
 
-    for doc in list_of_docs:
-        if doc_1 in doc and doc_2 in doc:
-            co_citation_index += 1
+        for doc in list_of_docs:
+            if doc_1 in doc and doc_2 in doc:
+                co_citation_index += 1
 
-    return co_citation_index / len(list_of_docs)
+        return co_citation_index / len(list_of_docs)
+
+    return 0
 
 
 # Tests
