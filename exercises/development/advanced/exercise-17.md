@@ -1,4 +1,4 @@
-## Development - Advanced, exercise 16
+## Development - Advanced, exercise 17
 
 ### Text
 *Co-citation Proximity Analysis (CPA)* is a similarity measure that uses citations to assess semantic similarity between documents using the part (section, paragraph, sentence) where the citations happen in the document. This similarity measure assumes that the documents cited in close proximity to each other tend to be more strongly related than those documents cited farther apart. For instance, suppose that a document is composed by three sections (1, 2, and 3) and that in section 1 it cites documents A and B, in section 2 it cites document C, and in section 3 it cites document A, C and D. Then the *Citation Proximity Index (CPI)* for each set of documents cited by an examined document is calculated by the following formula:
