@@ -17,7 +17,7 @@ def test_binary_search(item, ordered_list, start, end, expected):
 # Code of the function
 def binary_search(item, ordered_list, start, end):
     if start <= end:
-        mid = ((end - start) // 2) + start
+        mid = (start + end) // 2
         mid_item = ordered_list[mid]
         if item == mid_item:
             return mid
