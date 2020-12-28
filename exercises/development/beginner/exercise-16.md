@@ -6,8 +6,8 @@ Write down a small function in Python that takes in input a boolean and an integ
 ### Solution
 ```python
 # Test case for the function
-def test_f(b1, b2, expected):
-    result = f(b1, b2)
+def test_f(b, n, expected):
+    result = f(b, n)
     if expected == result:
         return True
     else:
@@ -15,15 +15,15 @@ def test_f(b1, b2, expected):
 
 
 # Code of the function
-def f(b1, b2):
-    return not (b1 or b2)
+def f(b, n):
+    return b and n % 2 == 0
 
 
 # Tests
-print(test_f(True, True, False))
-print(test_f(True, False, False))
-print(test_f(False, True, False))
-print(test_f(False, False, True))
+print(test_f(True, 3, False))
+print(test_f(True, 4, True))
+print(test_f(False, 3, False))
+print(test_f(False, 4, False))
 ``` 
 
 ### Additional material
