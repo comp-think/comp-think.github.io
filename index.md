@@ -127,6 +127,8 @@ The exercises of this section focus on creating a Python function according to a
 
 [**How To Code in Python**](https://www.digitalocean.com/community/books/digitalocean-ebook-how-to-code-in-python): a book written by [Lisa Tagliaferri](https://twitter.com/lisaironcutter) containing a series of tutorials around the Python world, available in [PDF](https://assets.digitalocean.com/books/python/how-to-code-in-python.pdf) and [EPUB](https://do.co/python-book-epub). 
 
+[**Introduction to Cultural Analytics & Python**](https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html): an interactive book written by [Melanie Walsh](https://twitter.com/mellymeldubs) which demonstrates how Python can be used to study cultural materials such as song lyrics, short stories, newspaper articles, tweets, Reddit posts, and film screenplays.
+
 
 ## License
 
