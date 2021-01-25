@@ -27,7 +27,7 @@ def mir(family_name, mat_number):
     
     if r < 0:
         r = r * -1
-    print(r, family_name, mat_number)
+    
     if r > 0 and family_name != "":
         idx = len(family_name) % r
         c = family_name[idx]
