@@ -1,4 +1,4 @@
-## Development - Advanced, exercise 19
+## Development - Advanced, exercise 20
 
 ### Text
 The *simple matching coefficient (SMC)* is a statistic used for comparing the similarity and diversity of two objects. In particular, given two objects *A* and *B*, represented by two dictionaries with n key-value pairs where the values can be set to either `True` or `False`, SMC is defined as: 
