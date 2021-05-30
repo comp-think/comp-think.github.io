@@ -36,7 +36,7 @@ def cv(full_name, mat):
 ```
 
 ### Hints
-The function `cv` is organised in three blocks. The first block create a collections of some of the numbers in the matriculation number. The second block create another collection of strings. The third block uses the elements in these collections to finalise the result.
+The function `cv` is organised in three blocks. The first block creates a collections of some of the numbers in the matriculation number. The second block creates another collection of strings. The third block uses the elements in these collections to finalise the result.
 
 ### Additional material
 The runnable [Python file](exercise_21.py) is available online. You can run it executing the command `python exercise_21.py` in a shell, and then following the instructions on screen to specify the intended input.
