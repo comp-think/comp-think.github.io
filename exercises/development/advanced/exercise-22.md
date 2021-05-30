@@ -3,7 +3,9 @@
 ### Text
 A **decision tree** is a flowchart-like structure in which each internal node represents a test on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (i.e. decision taken after computing all attributes). The paths from root to leaf represent classification rules. An example of decision tree is shown as follows:
 
-<img src="img/decision.png" alt="ARI" style="max-height:200px;" />
+<p style="text-align:center;">
+    <img src="img/decision.png" alt="ARI" style="max-height:400px;" />
+</p>
 
 The decision tree above allows one to check whether a given number (identified by the variable `attribute`) is equal to 0. For checking this, supposing to execute such a decision tree passing the number 3 as input, one has (a) to start from the root, (b) to execute the condition (i.e. 3 < 0), (c) to follow the related branch (i.e. *false*), and (d) to repeat again the process if we arrived in an inner node or (e) to return the result if we arrived in a leaf node.
 As shown in the figure, in a decision tree each internal node has always two children: the left one is reached when the condition the internal node specifies is *true*, while the right one is reached when the condition the internal node specified is *false*.
