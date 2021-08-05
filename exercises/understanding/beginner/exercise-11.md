@@ -12,7 +12,7 @@ def i(obj, x):
         return obj
 ```
 
-What is the result of the execution of `print(i([], 6))`?
+What is the result of the execution of `i([], 6)`?
 
 ### Solution
 `[]`
