@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_f(s1, s2, expected):
-    result = f(s1, s2)
+def test_bubble_sort(value_list, expected):
+    result = bubble_sort(value_list)
     if expected == result:
         return True
     else:
@@ -24,18 +24,26 @@ def test_f(s1, s2, expected):
 
 
 # Code of the function
-def f(s1, s2):
-    result = set()
+def bubble_sort(value_list):
+    swap = True
 
-    for c in s1:
-        if c in s2:
-            result.add(c)
-    
-    return len(result)
+    while swap:
+        swap = False
+        
+        for idx in range(1, len(value_list)):
+            if value_list[idx - 1] > value_list[idx]:
+                swap = True
+                tmp = value_list[idx]
+                value_list[idx] = value_list[idx - 1]
+                value_list[idx - 1] = tmp
 
+    return value_list
 
 # Tests
-print(test_f("hello", "loch", 3))
-print(test_f("hello", "hi", 1))
-print(test_f("hello", "hello", 4))
-print(test_f("hello", "try", 0))
+print(test_bubble_sort([], []))
+print(test_bubble_sort([1], [1]))
+print(test_bubble_sort([1, 2], [1, 2]))
+print(test_bubble_sort([2, 1], [1, 2]))
+print(test_bubble_sort([5, 2, 3, 6, 6], [2, 3, 5, 6, 6]))
+print(test_bubble_sort([5, 2, 3, 6, 6, 1], [1, 2, 3, 5, 6, 6]))
+

@@ -13,29 +13,24 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 
+def n(f_name, mat):
+    chars = []
+    first = ""
 
-# Test case for the function
-def test_f(s1, s2, expected):
-    result = f(s1, s2)
-    if expected == result:
-        return True
+    for sn in mat:
+        if first == "":
+            first = sn
+        i = int(sn)
+        cur = f_name[i % len(mat)]
+        chars.append(cur)
+
+    result = "".join(chars)
+    if result != "":
+        return result[0] + n(result, mat.replace(first, ""))
     else:
-        return False
+        return ""
 
 
-# Code of the function
-def f(s1, s2):
-    result = set()
-
-    for c in s1:
-        if c in s2:
-            result.add(c)
-    
-    return len(result)
-
-
-# Tests
-print(test_f("hello", "loch", 3))
-print(test_f("hello", "hi", 1))
-print(test_f("hello", "hello", 4))
-print(test_f("hello", "try", 0))
+my_mat = input("Please provide your matriculation number: ").strip()
+my_full_name = input("Please provide your full name: ").strip().lower()
+print("Result:", n(my_full_name, my_mat))

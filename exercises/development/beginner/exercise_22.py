@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_f(s1, s2, expected):
-    result = f(s1, s2)
+def test_f(f1, f2, expected):
+    result = f(f1, f2)
     if expected == result:
         return True
     else:
@@ -24,18 +24,11 @@ def test_f(s1, s2, expected):
 
 
 # Code of the function
-def f(s1, s2):
-    result = set()
-
-    for c in s1:
-        if c in s2:
-            result.add(c)
-    
-    return len(result)
+def f(f1, f2):
+    return int(f1) + int(f2)
 
 
 # Tests
-print(test_f("hello", "loch", 3))
-print(test_f("hello", "hi", 1))
-print(test_f("hello", "hello", 4))
-print(test_f("hello", "try", 0))
+print(test_f(12.3, 0.0, 12))
+print(test_f(12.3, 7.9, 19))
+print(test_f(1.1, 11.8, 12))

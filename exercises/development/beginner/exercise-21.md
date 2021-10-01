@@ -5,8 +5,9 @@ Write down a small function in Python that takes in input two strings and return
 
 ### Solution
 ```python
+# Test case for the function
 def test_f(s1, s2, expected):
-    result = f(s1, s2,)
+    result = f(s1, s2)
     if expected == result:
         return True
     else:
