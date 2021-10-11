@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>2. Programming in Python - the basics - Computational Thinking - Laboratory</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Computational Thinking - Laboratory</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chapters <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../01/" class="dropdown-item">1. Getting started with Python</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">2. Programming in Python - the basics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../01/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/comp-think/2021-2022/tree/master/docs/laboratory" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#programming-in-python-the-basics" class="nav-link">Programming in Python - the basics</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#syntax-in-python" class="nav-link">Syntax in Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#operators" class="nav-link">Operators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conditional-statement" class="nav-link">Conditional statement</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#functions" class="nav-link">Functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercises" class="nav-link">Exercises</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="programming-in-python-the-basics">Programming in Python - the basics</h1>
+<h2 id="syntax-in-python">Syntax in Python</h2>
+<h3 id="variables">Variables</h3>
+<p>Some general considerations:</p>
+<ul>
+<li>Python does not require you to define the type of variables, just declare them:</li>
+</ul>
+<pre class="code-overflow-wrap"><code class="language-python">a = 2
+</code></pre>
+<ul>
+<li>Can not start with a digit or contain a special symbol (|£$%@# etc.)</li>
+<li>Some keywords cannot be used for naming variables.</li>
+</ul>
+<pre class="code-overflow-wrap"><code class="language-python">False | class | finally | is | return | None | continue | for | lambda | try | True | def
+from | nonlocal | while | and | del | global | not | with | as | elif | if | or
+yield | assert | else | import | pass | break | except | in | raise
+</code></pre>
+<ul>
+<li>Python is case sensitive:</li>
+</ul>
+<pre class="code-overflow-wrap"><code class="language-python">variable != Variable
+</code></pre>
+<p>Some good practises for naming a variable:</p>
+<ul>
+<li>Combine lowercase letters (a-z) uppercase letters (A-Z), digits (1-9) and underscore (_)</li>
+<li>Use camelCase(<code>thisIsMyVariable</code>) or underscore to separate words (<code>this_is_my_variable</code>)</li>
+<li>Use names that make sense <code>count = 10</code> rather than <code>c = 10</code></li>
+</ul>
+<h3 id="punctuation-and-indentation">Punctuation and indentation</h3>
+<p>You don't need to add punctuation at the end of lines</p>
+<pre class="code-overflow-wrap"><code class="language-python">a = 2
+b = 2
+</code></pre>
+<p>Use semicolons in case you want to put multiple statements in a single line</p>
+<pre class="code-overflow-wrap"><code class="language-python">a = 2 ; b = 3
+</code></pre>
+<p>Use indentation to separate code blocks (is recommended to use tabs)</p>
+<pre class="code-overflow-wrap"><code class="language-python">a = 2
+if a &gt; 2:
+  print(a)
+</code></pre>
+<p>Document your code using comments</p>
+<pre class="code-overflow-wrap"><code class="language-python"># a comment to describe the variable assignment
+a = 2
+# a comment to describe the if condition
+if a &gt; 2:
+  print(a)
+</code></pre>
+<h3 id="data-types">Data types</h3>
+<h4>Numbers</h4>
+<pre class="code-overflow-wrap"><code class="language-python"># Integers
+a = int(5)
+
+# Floating point numbers
+a = float(5.0)
+
+# Complex numbers
+a = complex(5+2j)
+</code></pre>
+<h4>Strings</h4>
+<pre class="code-overflow-wrap"><code class="language-python">s = &quot;This is a string&quot;
+s = str(25)
+</code></pre>
+<h4>Lists</h4>
+<pre class="code-overflow-wrap"><code class="language-python"># This is a list
+myList = ['three', 'two', 'one']
+
+# To print the value 'two'
+print(myList[1])
+
+# To sort the list
+myList = sorted(myList)
+# Now myList = ['one', 'three', 'two']
+
+# Add a new item to the list
+myList.append('star')
+# Now myList = ['one', 'three', 'two', 'star']
+
+# Count how many elements we have in a list
+myList_length = len(myList)
+# the value of myList_length is 4
+</code></pre>
+<h3 id="the-print-command">The Print command</h3>
+<pre class="code-overflow-wrap"><code class="language-python">x = 5
+print(x)
+
+print(&quot;The value of x is &quot;,x)
+print(&quot;The value of x is &quot;+str(x))
+
+y = 2
+print(&quot;The value of x is {} and the value of y is {}&quot;.format(str(x),str(y)))
+</code></pre>
+<h2 id="operators">Operators</h2>
+<h4>Arithmetic operators</h4>
+<pre class="code-overflow-wrap"><code class="language-python">x = 5
+y = 2
+
+# + Add two operands or unary plus
+print(x+y)
+
+# - Subtract right operand from the left or unary minus
+print(x-y)
+
+# * Multiply two operands
+print(x*y)
+
+# / Divide left operand by the right one (always results into float)
+print(x/y)
+
+# % Modulus - remainder of the division of left operand by the right (remainder of x/y)
+print(x%y)
+
+# // Floor division - division that results into whole number adjusted to the left in the number line
+print(x//y)
+
+# ** Exponent - left operand raised to the power of right (x to the power y)
+print(x**y)
+</code></pre>
+<h4>Comparison operators</h4>
+<pre class="code-overflow-wrap"><code class="language-python">x = 5
+y = 2
+
+# &gt; Greater than - True if left operand is greater than the right
+print(x &gt; y)
+
+# &lt; Less than - True if left operand is less than the right
+print(x &lt; y)
+
+# == Equal to - True if both operands are equal
+print(x == y)
+
+# != Not equal to - True if operands are not equal
+print(x != y)
+
+# &gt;= Greater than or equal to - True if left operand is greater than or equal to the right
+print(x &gt;= y)
+
+# &lt;= Less than or equal to - True if left operand is less than or equal to the right
+print(x &lt;= y)
+</code></pre>
+<h4>Logic operators</h4>
+<pre class="code-overflow-wrap"><code class="language-python">x = True
+y = False
+
+# &quot;and&quot;: True if both the operands are true
+print(x and y)
+
+# &quot;or&quot;: True if either of the operands is true x or y
+print(x or y)
+
+# &quot;not&quot;: True if operand is false (complements the operand)
+print(not x)
+</code></pre>
+<h4>Assignment operators</h4>
+<pre class="code-overflow-wrap"><code class="language-python"># with &quot;=&quot;
+x = 5
+print(x)
+
+# with &quot;+=&quot;
+x += 5
+print(x)
+
+# with &quot;-=&quot;
+x -= 2
+print(x)
+
+# Try with other arithmetic operands ...
+</code></pre>
+<h4>Membership operators</h4>
+<pre class="code-overflow-wrap"><code class="language-python">my_list = [5,2,4,2]
+x = 4
+
+# &quot;in&quot;: True if value/variable is found in the sequence
+print(x in my_list)
+
+# &quot;not in&quot;: True if value/variable is not found in the sequence
+print(x not in my_list)
+</code></pre>
+<h2 id="conditional-statement">Conditional statement</h2>
+<p>A decision might be taken only when a specific condition is satisfied</p>
+<pre class="code-overflow-wrap"><code class="language-python">num = 3
+if num &gt;= 0:
+    print(&quot;Positive or Zero&quot;)
+else:
+    print(&quot;Negative number&quot;)
+</code></pre>
+<h2 id="functions">Functions</h2>
+<p>A block of code which defines a specific algorithm and runs only when it is called.</p>
+<pre class="code-overflow-wrap"><code class="language-python"># def {func_name}({parameter_1}, {parameter_2}, ...)
+def add(num1, num2):
+    return num1 + num2
+
+my_sum = add(5,4)
+print(my_sum)
+</code></pre>
+<h2 id="exercises">Exercises</h2>
+<h3 id="1st-exercise">1st Exercise</h3>
+<p>The function <code>is_friend_of_harry()</code> returns a <em>True</em> value if a given name (i.e. type string) is one of the friends of Harry Potter, otherwise the function returns <em>False</em>. Let's pretend the friends of Harry Potter are: <em>"Ron", "Hermione", "Hagrid",</em> and <em>"Dumbledore"</em>.   </p>
+<p><strong>Example:</strong> calling the function <code>is_friend_of_harry("Malfoy")</code> returns <em>False</em>.</p>
+<p><span class="ex-part"> <strong>1.a)</strong> Define the function <code>is_friend_of_harry()</code>, and call it using the following names as parameters: <em>"Hagrid", "Voldemort",</em> and <em>"Bellatrix"</em>. Print the result (i.e. <em>True/False</em>) of each call. </span></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_1')">Show solution</button></p>
+<pre id="sol_1" class="code-overflow-wrap solution-code"><code class="language-python">def is_friend_of_harry(p_name):
+    friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
+    if p_name in friends_list:
+        return True
+    else:
+        return False
+
+print(is_friend_of_harry(&quot;Hagrid&quot;))
+print(is_friend_of_harry(&quot;Voldemort&quot;))
+print(is_friend_of_harry(&quot;Bellatrix&quot;))
+</code></pre>
+<p><span class="ex-part"> <strong>1.b)</strong> Print <em>"Harry has friends!"</em> if at least one of the previous characters is a friend of Harry, otherwise, print <em>"Harry has no friends!"</em>. </span></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2')">Show solution</button></p>
+<pre id="sol_2" class="code-overflow-wrap solution-code"><code class="language-python">a = is_friend_of_harry(&quot;Hagrid&quot;)
+b = is_friend_of_harry(&quot;Voldemort&quot;)
+c = is_friend_of_harry(&quot;Bellatrix&quot;)
+
+if a or b or c:
+    print(&quot;Harry has friends!&quot;)
+else:
+    print(&quot;Harry has no friends!!&quot;)
+</code></pre>
+<p><span class="ex-part"> <strong>1.c)</strong> Let's make our function <code>is_friend_of_harry()</code> a bit more powerful. Such that if I type a name in lowercase (e.g. "ron") or if I use spaces at the end of the name (e.g. "Ron  "), or even if I do both the things, the function should work the same.  </p>
+<p><strong>Hint:</strong> in python <code>{string}.lower()</code> transforms a string to its lowercase form; <code>{string}.strip()</code> removes the starting and ending whitespaces (if any); and <code>{string}.capitalize()</code> capitalizes the first letter of a string </span></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3')">Show solution</button></p>
+<pre id="sol_3" class="code-overflow-wrap solution-code"><code class="language-python">def is_friend_of_harry(p_name):
+    friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
+    p_name = p_name.lower()
+    p_name = p_name.strip()
+    p_name = p_name.capitalize()
+    if p_name in friends_list:
+        return True
+    else:
+        return False
+</code></pre>
+<p><span class="ex-part"> <strong>1.d)</strong> Define another function <code>is_prof_friend_of_harry()</code> which returns a <em>True</em> value if a given name is a professor and a friend of Harry, otherwise the function must return <em>False</em>. The function should call the improved version of the function <code>is_friend_of_harry()</code> in its code (i.e. defined in (1.c)). Let's pretend the professors of Harry Potter are: <em>"Snape", "Lupin", "Hagrid",</em> and <em>"Dumbledore"</em>.  </span></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4')">Show solution</button></p>
+<pre id="sol_4" class="code-overflow-wrap solution-code"><code class="language-python">
+def is_prof_friend_of_harry(p_name):
+  prof_list = [&quot;Snape&quot;, &quot;Lupin&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
+  p_name = p_name.lower()
+  p_name = p_name.strip()
+  p_name = p_name.capitalize()
+  if p_name in prof_list and is_friend_of_harry(p_name):
+    return True
+  else:
+    return False
+
+print(is_prof_friend_of_harry(&quot;  hagrid&quot;))
+print(is_prof_friend_of_harry(&quot;voldemort&quot;))
+print(is_prof_friend_of_harry(&quot; Bellatrix  &quot;))
+</code></pre>
+<h3 id="2nd-exercise">2nd Exercise</h3>
+<p>Each house of Hogwarts has a score which is updated based on some actions such as exams grades and the rules violation. Let's pretend we have a list of the houses <code class="py">houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]</code> and another list containing the score of each house <code class="py">scores = [0,0,0,0]</code>,  such that the score value in position N of the scores list belongs to the house in position N of the houses list .</p>
+<p><strong>a)</strong> Define the function <code>update_house_score()</code> function which increments/decrements the score of a specific house with a given points. The function takes three parameters: <code>house_name</code>, <code>action</code> (string value "+"/"-"), and <code>points</code>.<br />
+<strong>Example:</strong> Calling the function this way: <code class="py">update_house_score("Gryffindor","+",5)</code> should increment the score of house Gryffindor by 5 points.<br />
+<strong>Hint:</strong> The function <code class="py">{list}.index({value})</code> returns the index of an element in the list, e.g. <code class="py">houses.index("Hufflepuff")</code> returns the value <em>1</em></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5')">Show solution</button></p>
+<pre id="sol_5" class="code-overflow-wrap solution-code"><code class="language-python">houses = [&quot;Gryffindor&quot;, &quot;Hufflepuff&quot;, &quot;Ravenclaw&quot;, &quot;Slytherin&quot;]
+scores = [0,0,0,0]
+
+def update_house_score(house_name,action,points):
+    index = houses.index(house_name)
+    if action == &quot;+&quot;:
+        scores[index] += points
+    else:
+        scores[index] -= points
+</code></pre>
+<p><strong>b)</strong> After the Quidditch cup the Houses have increased/decreased their scores as follows: +10 Gryffindor, +7 Hufflepuff, -3 Slytherin. After the game a member of house "Slytherin" helped a man riding his broom and his house gained back 5 points. Call the function <code>update_house_score()</code> for each action in order to update the houses points and print the two lists: <code>houses</code> and <code>scores</code>.</p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6')">Show solution</button></p>
+<pre id="sol_6" class="code-overflow-wrap solution-code"><code class="language-python">update_house_score(&quot;Gryffindor&quot;,&quot;+&quot;,10)
+update_house_score(&quot;Hufflepuff&quot;,&quot;+&quot;,7)
+update_house_score(&quot;Slytherin&quot;,&quot;-&quot;,3)
+update_house_score(&quot;Slytherin&quot;,&quot;+&quot;,5)
+print(houses)
+print(scores)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -62,8 +62,16 @@ h4{
 .navbar-header .navbar-toggler.collapsed{
   display: none;
 }
+.toggle-solution.btn{
+  width: 100% !important;
+}
 
 .nav .dropdown ul a:hover{
+  background-color: var(--a_color_hover) !important;
+  color: white !important;
+}
+
+.nav .dropdown ul a.active{
   background-color: var(--a_color_hover) !important;
   color: white !important;
 }

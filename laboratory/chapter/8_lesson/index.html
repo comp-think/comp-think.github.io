@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Computational Thinking - Laboratory</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Data analysis of the Netflix shows - part 3 - Computational Thinking - Laboratory</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <link href="extra.css" rel="stylesheet">
+        <link href="../../extra.css" rel="stylesheet">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href=".">Computational Thinking - Laboratory</a>
+                <a class="navbar-brand" href="../..">Computational Thinking - Laboratory</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,19 +34,19 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chapters <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="chapter/01/" class="dropdown-item">1. Getting started with Python</a>
+    <a href="../01/" class="dropdown-item">1. Getting started with Python</a>
 </li>
                                     
 <li>
-    <a href="chapter/02/" class="dropdown-item">2. Programming in Python - the basics</a>
+    <a href="../02/" class="dropdown-item">2. Programming in Python - the basics</a>
 </li>
                                 </ul>
                             </li>
@@ -58,16 +58,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="chapter/01/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a href="https://github.com/comp-think/2021-2022/tree/master/docs/laboratory" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
                             </li>
@@ -89,8 +79,20 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#table-of-contents" class="nav-link">Table of Contents</a>
+            <li class="nav-item" data-level="1"><a href="#data-analysis-of-the-netflix-shows-part-3" class="nav-link">Data analysis of the Netflix shows - part 3</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#data-visualization" class="nav-link">Data visualization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-matplotlib-library" class="nav-link">The matplotlib library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-visualizations-on-the-netflix-shows-dataset-see-also-the-github-repository" class="nav-link">Data visualizations on the Netflix shows dataset (see also the github repository)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -98,28 +100,61 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="table-of-contents">Table of Contents</h1>
-<p>The laboratory part of computational thinking covers with practical exercises/examples in Python the theoretical concepts contained in the <a href="https://comp-think.github.io/">computational thinking book</a>.</p>
-<p>Each chapter has a dedicated directory used to store all its related materials (e.g. data, scripts, etc)</p>
-<p>The chapters of this part are presented in an interactive laboratory session during the <a href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/467045">computational thinking and programming course</a>. The lessons of this session are given by <a href="https://www.unibo.it/sitoweb/ivan.heibi2">Ivan Heibi</a> feel free to contact him for any information/question.</p>
-<table id="schedule">
-<thead>
-  <tr>
-    <th>Chapter</th>
-    <th>Materials</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td><a href="chapter/01">Getting started with Python</a></td>
-    <td><a href="https://github.com/comp-think/comp-think.github.io/tree/master/laboratory" title="Github directory"><i class="fa fa-lg fa-github"></i></a></td>
-  </tr>
-  <tr>
-    <td><a href="chapter/02">Programming in Python - the basics</a></td>
-    <td><a href="https://github.com/comp-think/comp-think.github.io/tree/master/laboratory" title="Github directory"><i class="fa fa-lg fa-github"></i></a></td>
-  </tr>
-</tbody>
-</table></div>
+<h1 id="data-analysis-of-the-netflix-shows-part-3">Data analysis of the Netflix shows - part 3</h1>
+<h5>Date: 11/12/2020</h5>
+<h5>Time: 12:30-14:30</h5>
+<h2 id="data-visualization">Data visualization</h2>
+<li>Apply a graphic representation on the data: mapping the original data to graphic elements (for example: lines, points, barchart etc).</li>
+<li>If we want to draw a graphic on top of a dataset, we need to walk through these three steps:
+  <ul>
+    <li> What is the nature of our data?</li>  
+    <li> What aspects we want to analyse?</li>
+    <li> What are the most suitable graphical elements we can use to present our analysis?</li>
+  </ul>
+</li>
+
+<div class="a-box notes-box">
+<b>Example:</b>
+<b>Data:</b> a collection of articles. For each article we have the year of its publication and the author/s.
+<b>Analysis:</b> we want to check how many articles did "Silvio Peroni" authored on each different year.
+<b>Visualization:</b> we can use a barchart.
+<img src="../img/barchart.png">
+</div>
+
+<h2 id="the-matplotlib-library">The matplotlib library</h2>
+<p>matplotlib was the first Python data visualization library and it's still widely used for plotting in the Python community. It was designed to closely resemble MATLAB, a popular proprietary programming language. <br>
+We are especially interested in <code class="py">matplotlib.pyplot</code>, a collection of plotting functions. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc.<br><br>
+<b>Note:</b> this is not a builtin library of python so we need to install it using <code class="py">pip install matplotlib</code>
+<br></p>
+<div class="py-hint-box large">
+<div class="code-sec large">
+<span>import matplotlib.pyplot as plt</span><hr>
+<span></span><hr>
+<span>data = [23,85, 72, 43, 52]</span><hr>
+<span>labels = ['A', 'B', 'C', 'D', 'E']</span><hr>
+<span></span><hr>
+<span class="comment"># x-Axis ticks and label</span><hr>
+<span>plt.xticks(range(len(data)), labels)</span><hr>
+<span>plt.xlabel('Class')</span><hr>
+<span></span><hr>
+<span class="comment"># y-Axis label</span><hr>
+<span>plt.ylabel('Amounts')</span><hr>
+<span></span><hr>
+<span class="comment"># chart title</span><hr>
+<span>plt.title('I am title')</span><hr>
+<span></span><hr>
+<span class="comment"># plt a bar</span><hr>
+<span>plt.bar(range(len(data)), data)</span><hr>
+<span>plt.show(</span><hr>
+</div>
+</div>
+<p>After running the above script this chart should appear:
+<img src="../img/matplotlib_1.png"></p>
+<h2 id="data-visualizations-on-the-netflix-shows-dataset-see-also-the-github-repository">Data visualizations on the Netflix shows dataset <span class="inline-header">(see also the <a href="https://github.com/comp-think/2020-2021/tree/master/docs/laboratory/src/lessons/8">github repository</a>)</span></h2>
+<p>To answer the following exercises we need to use some of the functions we have defined on the previous lessons (part-1, and part-2).</p>
+<p><span class="inline-header">a)</span> Draw a graphic using <code class="py">matplotlib</code> which plots the total number of shows (all type of shows) that Netflix added for each different year.</p>
+<p><span class="inline-header">b)</span> Draw a graphic using <code class="py">matplotlib</code> which plots the average time (in years) it takes Netflix to add a show on its list after its actual release. Plot this value for each different year.<br>
+<b>Hint: </b> Take a look at the line charts of matplotlib <a href="https://datatofish.com/line-chart-python-matplotlib/">https://datatofish.com/line-chart-python-matplotlib/</a>.</p></div>
             </div>
         </div>
 
@@ -128,12 +163,12 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="extra.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -201,8 +236,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2021-10-11 15:33:31.587627+00:00
--->

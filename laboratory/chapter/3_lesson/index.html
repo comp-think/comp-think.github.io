@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Working with lists and tuples - Computational Thinking - Laboratory</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Computational Thinking - Laboratory</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chapters <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../01/" class="dropdown-item">1. Getting started with Python</a>
+</li>
+                                    
+<li>
+    <a href="../02/" class="dropdown-item">2. Programming in Python - the basics</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/comp-think/2021-2022/tree/master/docs/laboratory" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#working-with-lists-and-tuples" class="nav-link">Working with lists and tuples</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#tuples" class="nav-link">Tuples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#loops-while-and-for" class="nav-link">Loops: "while" and "for"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercises" class="nav-link">Exercises</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="working-with-lists-and-tuples">Working with lists and tuples</h1>
+<h5>Date: 11/11/2020</h5>
+<h5>Time: 09:30-11:30</h5>
+<h2 id="tuples">Tuples</h2>
+<div class="py-hint-box">
+  <div class="info-sec">
+    Similar to lists, but their values can’t be modified
+  </div>
+  <div class="code-sec">
+    <span>numbers = (10,30,50,70)</span><hr>
+    <span>print(numbers[2])</span><hr>
+    <span></span><hr>
+    <span class="error-code">#ERROR: assignment is not allowed</span><hr>
+    <span class="error-code">numbers[2] = 55</span><hr>
+  </div>
+</div>
+
+<h2 id="loops-while-and-for">Loops: "while" and "for"</h2>
+<div class="py-hint-box">
+  <div class="info-sec">
+    <li>Loops are used in order to repeat similar actions.</li>
+    <li>We can't loop forever this will make our program crash</li>
+    <li>Our loops need a rule/condition that defines when they need to stop</li>
+  </div>
+</div>
+
+<h3 id="the-while-statement">The "while" statement</h3>
+<div class="py-hint-box">
+  <div class="info-sec">
+  <li>While the condition is true execute the inner code.</li>
+  <li>We use it when we don't know the number of times/repetitions we need to execute our code until a specific condition is met</li>
+  </div>
+  <div class="code-sec quarter">
+    <span>a = 0</span><hr>
+    <span>while a < 10 :</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;print(a)</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;a += 1</span><hr>
+  </div>
+</div>
+
+<h3 id="the-for-statement">The "for" statement</h3>
+<div class="py-hint-box">
+  <div class="info-sec">
+  <li>Repeat the inner code for a number of times</li>
+  <li>We use it when we already know how many times/repetitions we need to execute our code</li>
+  <li>In python a for loop is done its execution when it finishes iterating a given sequence</li>
+  </div>
+  <div class="code-sec quarter">
+    <span>for a in range(0,10):</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;print(a)</span><hr>
+  </div>
+</div>
+
+<h2 id="exercises">Exercises</h2>
+<p>(<span class="inline-header">check the exercises on the <a href="https://github.com/comp-think/2020-2021/tree/master/docs/laboratory/src/lessons/3">github repository</a></span>)</p>
+<h3 id="1st-exercise">1st Exercise</h3>
+<p>Let's pretend we have a list containing the titles of all the Computational Thinking lessons. The list is ordered following the established schedule. Below is the list:</p>
+<div class="py-hint-box intext large">
+  <div class="code-sec large">
+  <span>l_schedule = ["Introduction to Computational Thinking","Algorithms","Computability","Programming Languages","Laboratory","Organising information: ordered structures","Laboratory","Brute-force algorithms","Organising information: unordered structures","Laboratory","Recursion","Laboratory","Divide and conquer algorithms","Dynamic programming algorithms","Laboratory","Organising information: trees","Laboratory","Backtracking algorithms","Laboratory","Organising information: graphs","Laboratory","Project: specification","Greedy algorithms"]</span><hr>
+  </div>
+</div>
+<p><span class="inline-header">a)</span> Define a function named <code class="py">lab_lessons()</code> which takes <code class="py">l_schedule</code> as a parameter and returns the total number of <code class="py">"Laboratory"</code> lessons.</p>
+<div class="py-hint-box large">
+  Mark the box to see the solution
+  <div class="code-sec large solution">
+  <span>def lab_lessons(a_list):</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;count = 0</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;for title in a_list:</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if title == "Laboratory":</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count += 1</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;return count</span><hr>
+  <span></span><hr>
+  </div>
+</div>
+<p><span class="inline-header">b)</span> Define a function named <code class="py">all_before_lab()</code> which takes <code class="py">l_schedule</code> as a parameter and returns a list containing all the lessons scheduled before the first <code class="py">"Laboratory"</code> lesson.</p>
+<div class="py-hint-box large">
+  Mark the box to see the solution
+  <div class="code-sec large solution">
+  <span>def all_before_lab(a_list):</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;result = []</span><hr>
+  <span></span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;i = 0</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;title = a_list[i]</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;while title != "Laboratory":</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.append(title)</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 1</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = a_list[i]</span><hr>
+  <span></span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;return result</span><hr>
+  <span></span><hr>
+  </div>
+</div>
+<p><span class="inline-header">c)</span> Define a function named <code class="py">all_before_lab_n()</code> which takes <code class="py">l_schedule</code> and a number <code class="py">n</code> as parameters, and returns a list containing all the lessons scheduled before the <code class="py">n</code>th laboratory lesson. (the returned list should also include the laboratory lessons)</p>
+<div class="py-hint-box large">
+  Mark the box to see the solution
+  <div class="code-sec large solution">
+  <span>def all_before_lab_n(a_list,n):</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;result = []</span><hr>
+  <span></span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;i = 0</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;count_lab = 0</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;while count_lab < n:</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = a_list[i]</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.append(title)</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if title == "Laboratory":</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count_lab += 1</span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 1</span><hr>
+  <span></span><hr>
+  <span>&nbsp;&nbsp;&nbsp;&nbsp;return result</span><hr>
+  <span></span><hr>
+  </div>
+</div>
+
+<p><span class="inline-header">d)</span> Let's pretend we have a new list representing an extended version of the <code class="py">l_schedule</code>, such that it embeds information about the date and the duration (in hours) of the each lesson. We call the new list <code class="py">l_schedule_extended</code> and each of its elements is represented as a tuple: <code class="py">([DATE],[HOURS],[TITLE])</code>. For instance, the second lesson "Algorithms" will have the corresponding tuple: <code class="py">("16/10/20",2,"Algorithms")</code>. Here we have the entire <code class="py">l_schedule_extended</code>:</p>
+<div class="py-hint-box intext large">
+  <div class="code-sec large">
+  <span>l_schedule_extended = [ ("14/10/20",2,"Introduction to Computational Thinking"), ("16/10/20",2,"Algorithms"), ("19/10/20",2,"Computability"), ("21/10/20",2,"Programming Languages"), ("23/10/20",2,"Laboratory"), ("26/10/20",2,"Organising information: ordered structures"), ("28/10/20",2,"Laboratory"), ("30/10/20",2,"Brute-force algorithms"), ("09/11/20",2,"Organising information: unordered structures"), ("11/11/20",2,"Laboratory"), ("13/11/20",2,"Recursion"), ("16/11/20",2,"Laboratory"), ("20/11/20",2,"Divide and conquer algorithms"), ("23/11/20",2,"Dynamic programming algorithms"), ("25/11/20",2,"Laboratory"), ("27/11/20",2,"Organising information: trees"), ("30/11/20",2,"Laboratory"), ("02/12/20",2,"Backtracking algorithms"), ("04/12/20",2,"Laboratory"), ("09/12/20",2,"Organising information: graphs"), ("11/12/20",2,"Laboratory"), ("14/12/20",2,"Project: specification"), ("16/12/20",2,"Greedy algorithms") ]</span><hr>
+  </div>
+</div>
+<p>Define a function <code class="py">max_lessons_hours()</code> which takes <code class="py">l_schedule_extended</code> and a number <code class="py">max_hours</code> as parameters, and returns a list containing only the titles of all the lessons which could be attended with a maximum number of hours = <code class="py">max_hours</code>, starting from the first lesson of the year.</p>
+<div class="py-hint-box large">
+  Mark the box to see the solution
+  <div class="code-sec large solution">
+    <span>def max_lessons_hours(a_list, max_hours):</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;result = []</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;tot_hours = 0</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;i = 0</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;while tot_hours < max_hours:</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = a_list[i][2]</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.append(title)</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tot_hours += a_list[i][1]</span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 1</span><hr>
+    <span></span><hr>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;return result</span><hr>
+  </div>
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
