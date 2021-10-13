@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>6. Data analysis project - Computational Thinking - Laboratory</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Computational Thinking - Laboratory</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Chapters <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../01/" class="dropdown-item">1. Getting started with Python</a>
+</li>
+                                    
+<li>
+    <a href="../02/" class="dropdown-item">2. Programming in Python - the basics</a>
+</li>
+                                    
+<li>
+    <a href="../03/" class="dropdown-item">3. Working with lists and tuples</a>
+</li>
+                                    
+<li>
+    <a href="../04/" class="dropdown-item">4. Working with unordered structures</a>
+</li>
+                                    
+<li>
+    <a href="../05/" class="dropdown-item">5. Recursion and working with files</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">6. Data analysis project</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../05/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/comp-think/2021-2022/tree/master/docs/laboratory" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#data-analysis-project" class="nav-link">Data analysis project</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-dataset" class="nav-link">The dataset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#project-initialization" class="nav-link">Project initialization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1st-exercise-read-the-dataset" class="nav-link">1st Exercise – read the dataset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2nd-exercise-descriptive-statistics" class="nav-link">2nd Exercise - descriptive statistics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3rd-exercise-text-analysis" class="nav-link">3rd Exercise - text analysis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="data-analysis-project">Data analysis project</h1>
+<h2 id="the-dataset">The dataset</h2>
+<p>The dataset <a href="https://github.com/comp-think/comp-think.github.io/tree/master/laboratory/data/netflix_titles.csv">netflix_titles.csv</a> contains a list of the tv shows and movies available on Netflix as of 2019 (the dataset is under a <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain license</a> and had been downloaded using <a href="https://www.kaggle.com/shivamb/netflix-shows">kaggle APIs</a>).</p>
+<h3 id="contents">Contents</h3>
+<p>The CSV file contains the following columns:</p>
+<ul>
+<li><strong>show_id</strong>: Unique ID for every movie/tv-show</li>
+<li><strong>type</strong>: Type of the show - "Movie" or "TV Show"</li>
+<li><strong>title</strong>: Title of the show</li>
+<li><strong>director</strong>: Director of the movie</li>
+<li><strong>cast</strong>: Actors involved in the show</li>
+<li><strong>country</strong>: Country where the show was produced</li>
+<li><strong>date_added</strong>: Date it was added on Netflix</li>
+<li><strong>release_year</strong>: Actual Release year of the show</li>
+<li><strong>rating</strong>: TV Rating of the show (used for evaluating the content and reporting the suitability of television programs for children, teenagers, or adults)</li>
+<li><strong>duration</strong>: Total Duration - in minutes or number of seasons</li>
+</ul>
+<h2 id="project-initialization">Project initialization</h2>
+<p>Initialize your project as follow:</p>
+<ul>
+<li>create a directory and name it <span class="dir">netflix_analysis</span></li>
+<li>create a python script inside <span class="dir">netflix_analysis/</span> and name it <strong> <em>main.py</em> </strong></li>
+<li>create a python script inside <span class="dir">netflix_analysis/</span> and name it <strong> <em>util.py</em> </strong></li>
+<li>create a directory inside <span class="dir">netflix_analysis/</span> and name it <span class="dir">data</span></li>
+<li>download (if you have not done it yet) the <a href="https://github.com/comp-think/2020-2021/tree/master/docs/laboratory/src/lessons/6_7/data/netflix_titles.csv">netflix_titles.csv</a> dataset and put it inside the <span class="dir">netflix_analysis/data</span> directory.</li>
+</ul>
+<h2 id="1st-exercise-read-the-dataset">1st Exercise – read the dataset</h2>
+<p>Open the <span class="dir">netflix_analysis/util.py</span> file and define the following functions:  </p>
+<p><strong>1.a)</strong> <code class="py">csv_to_list_of_list()</code> which takes the PATH of a CSV file <code class="py">f_path</code> and returns a matrix (list of lists) representing the CSV contents without including the first row of the CSV (the header).</p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1a')">Show solution</button></p>
+<pre id="sol_6_1a" class="code-overflow-wrap solution-code"><code class="language-python">def csv_to_list_of_list(f_path):
+    result = []
+    with open(f_path, mode='r') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        next(csv_reader)
+        for row in csv_reader:
+            result.append(row)
+    return result
+</code></pre>
+<p><strong>1.b)</strong> <code class="py">csv_to_list_of_dict()</code> which takes the PATH of a CSV file <code class="py">f_path</code> and returns a list of dictionaries which represents the CSV contents, such that each element of the list (i.e. a dictionary) represents a row of the CSV. The pairs key-value of the dictionary represents respectively the name of the column and the corresponding value in the cell.
+<strong>Example:</strong><code>[ {"name": "James", "age": 25}, {"name":"David", "age": 28} ]</code></p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1b')">Show solution</button></p>
+<pre id="sol_6_1b" class="code-overflow-wrap solution-code"><code class="language-python">def csv_to_list_of_dict(f_path):
+    result = []
+    with open(f_path, mode='r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            result.append(row)
+    return result
+</code></pre>
+<h2 id="2nd-exercise-descriptive-statistics">2nd Exercise - descriptive statistics</h2>
+<p>Open the <span class="dir">netflix_analysis/main.py</span> file and write a portion of code which prints the following informations:</p>
+<ul>
+<li>a) The titles of all the Netflix shows produced in Italy.</li>
+<li>b) The number of Italian movies and the number of Italian tv shows.</li>
+<li>c) True/False whether there is at least a movie produced in "Finland"   </li>
+</ul>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_2')">Show solution</button></p>
+<pre id="sol_6_2" class="code-overflow-wrap solution-code"><code class="language-python">
+import csv
+from util import *
+
+netflix_data = csv_to_list_of_dict(&quot;data/netflix_titles.csv&quot;)
+
+# a ----
+italian_shows = []
+for row in netflix_data:
+    l_country = row[&quot;country&quot;].split(&quot;, &quot;)
+    if &quot;Italy&quot; in l_country:
+        italian_shows.append(row)
+
+for ita_show in italian_shows:
+    print(ita_show[&quot;title&quot;])
+
+# b ----
+count_movies = 0
+count_tvshows = 0
+for ita_show in italian_shows:
+    show_type = ita_show[&quot;type&quot;]
+    if show_type == &quot;Movie&quot;:
+        count_movies += 1
+    elif show_type == &quot;TV Show&quot;:
+        count_tvshows += 1
+
+print(count_movies, count_tvshows)
+
+
+# c ----
+found = False
+for row in netflix_data:
+    l_country = row[&quot;country&quot;].split(&quot;, &quot;)
+    if &quot;Finland&quot; in l_country:
+        print(&quot;Found it !!&quot;)
+        found = True
+        break
+
+if not found:
+    print(&quot;Not found !!&quot;)
+
+</code></pre>
+<h2 id="3rd-exercise-text-analysis">3rd Exercise - text analysis</h2>
+<p>The analysis of the text is a common and main task in Natural Language Processing (NLP).</p>
+<p>The Natural language toolkit (NLTK) is a very popular library for natural language processing in python and it has a large active community behind it. To install it:  </p>
+<p><code>pip3 install nltk</code></p>
+<p>To check if the NLTK library has been correctly installed we need to import it in a python script and run it:</p>
+<p><code>Import nltk</code></p>
+<p>If every thing looks fine we will install/download popular nltk packages. We will download the popular and essential ones used for working with the basic nltk operations. Write the following line in your python script (after importing nltk):  </p>
+<p><code>nltk.download("popular")</code></p>
+<p>In case running the above commands returns an error message: <b><i>"CERTIFICATE_VERIFY_FAILED"</i></b>, then write in your script only the following lines and run it again.</p>
+<pre class="code-overflow-wrap"><code class="language-python">import nltk
+import ssl
+
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+nltk.download()
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
