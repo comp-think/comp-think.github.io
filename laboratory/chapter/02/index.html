@@ -48,6 +48,22 @@
 <li>
     <a href="./" class="dropdown-item active">2. Programming in Python - the basics</a>
 </li>
+                                    
+<li>
+    <a href="../03/" class="dropdown-item">3. Working with lists and tuples</a>
+</li>
+                                    
+<li>
+    <a href="../04/" class="dropdown-item">4. Working with unordered structures</a>
+</li>
+                                    
+<li>
+    <a href="../05/" class="dropdown-item">5. Recursion and working with files</a>
+</li>
+                                    
+<li>
+    <a href="../06/" class="dropdown-item">6. Data analysis project</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -64,7 +80,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../03/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -121,14 +137,14 @@
 <h1 id="programming-in-python-the-basics">Programming in Python - the basics</h1>
 <h2 id="syntax-in-python">Syntax in Python</h2>
 <h3 id="variables">Variables</h3>
-<p>Some general considerations:</p>
+<p><strong>Some general considerations:</strong></p>
 <ul>
-<li>Python does not require you to define the type of variables, just declare them:</li>
+<li>Python does not require you to define the type of the variables, just declare them:</li>
 </ul>
 <pre class="code-overflow-wrap"><code class="language-python">a = 2
 </code></pre>
 <ul>
-<li>Can not start with a digit or contain a special symbol (|£$%@# etc.)</li>
+<li>The name of a variable can not start with a digit or contain a special symbol (|£$%@# etc.)</li>
 <li>Some keywords cannot be used for naming variables.</li>
 </ul>
 <pre class="code-overflow-wrap"><code class="language-python">False | class | finally | is | return | None | continue | for | lambda | try | True | def
@@ -140,7 +156,7 @@ yield | assert | else | import | pass | break | except | in | raise
 </ul>
 <pre class="code-overflow-wrap"><code class="language-python">variable != Variable
 </code></pre>
-<p>Some good practises for naming a variable:</p>
+<p><strong>Some good practises for naming a variable:</strong></p>
 <ul>
 <li>Combine lowercase letters (a-z) uppercase letters (A-Z), digits (1-9) and underscore (_)</li>
 <li>Use camelCase(<code>thisIsMyVariable</code>) or underscore to separate words (<code>this_is_my_variable</code>)</li>
@@ -317,14 +333,14 @@ print(my_sum)
 <h3 id="1st-exercise">1st Exercise</h3>
 <p>The function <code>is_friend_of_harry()</code> returns a <em>True</em> value if a given name (i.e. type string) is one of the friends of Harry Potter, otherwise the function returns <em>False</em>. Let's pretend the friends of Harry Potter are: <em>"Ron", "Hermione", "Hagrid",</em> and <em>"Dumbledore"</em>.   </p>
 <p><strong>Example:</strong> calling the function <code>is_friend_of_harry("Malfoy")</code> returns <em>False</em>.</p>
-<p><span class="ex-part"> <strong>1.a)</strong> Define the function <code>is_friend_of_harry()</code>, and call it using the following names as parameters: <em>"Hagrid", "Voldemort",</em> and <em>"Bellatrix"</em>. Print the result (i.e. <em>True/False</em>) of each call. </span></p>
+<p><span class="ex-part"> <strong>1.a)</strong> Define the function <code>is_friend_of_harry()</code>, and call it for each one of the following characters: <em>"Hagrid", "Voldemort",</em> and <em>"Bellatrix"</em>. Print the result (i.e. <em>True/False</em>) of each call. </span></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_1')">Show solution</button></p>
 <pre id="sol_1" class="code-overflow-wrap solution-code"><code class="language-python">def is_friend_of_harry(p_name):
-    friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
-    if p_name in friends_list:
-        return True
-    else:
-        return False
+  friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
+  if p_name in friends_list:
+    return True
+  else:
+    return False
 
 print(is_friend_of_harry(&quot;Hagrid&quot;))
 print(is_friend_of_harry(&quot;Voldemort&quot;))
@@ -341,7 +357,7 @@ if a or b or c:
 else:
     print(&quot;Harry has no friends!!&quot;)
 </code></pre>
-<p><span class="ex-part"> <strong>1.c)</strong> Let's make our function <code>is_friend_of_harry()</code> a bit more powerful. Such that if I type a name in lowercase (e.g. "ron") or if I use spaces at the end of the name (e.g. "Ron  "), or even if I do both the things, the function should work the same.  </p>
+<p><span class="ex-part"> <strong>1.c)</strong> Let's make our function <code>is_friend_of_harry()</code> a bit more powerful. The new function should work the same way even if the given name is not well-written: (a) is all/in part written in lowercase (e.g. "ron", "Ron"), (b) includes spaces (e.g. "Ron  ", " ron"), or (c) has both (a) and (b) cases in it.  </p>
 <p><strong>Hint:</strong> in python <code>{string}.lower()</code> transforms a string to its lowercase form; <code>{string}.strip()</code> removes the starting and ending whitespaces (if any); and <code>{string}.capitalize()</code> capitalizes the first letter of a string </span></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3')">Show solution</button></p>
 <pre id="sol_3" class="code-overflow-wrap solution-code"><code class="language-python">def is_friend_of_harry(p_name):
@@ -354,7 +370,7 @@ else:
     else:
         return False
 </code></pre>
-<p><span class="ex-part"> <strong>1.d)</strong> Define another function <code>is_prof_friend_of_harry()</code> which returns a <em>True</em> value if a given name is a professor and a friend of Harry, otherwise the function must return <em>False</em>. The function should call the improved version of the function <code>is_friend_of_harry()</code> in its code (i.e. defined in (1.c)). Let's pretend the professors of Harry Potter are: <em>"Snape", "Lupin", "Hagrid",</em> and <em>"Dumbledore"</em>.  </span></p>
+<p><span class="ex-part"> <strong>1.d)</strong> Define another function <code>is_prof_friend_of_harry()</code> which returns a <em>True</em> value if a given name, which might be in a not well-written form (as in (1.c)), is a professor and a friend of Harry, otherwise the function must return <em>False</em>. The function should call the improved version of the function <code>is_friend_of_harry()</code> (i.e. defined in (1.c)) in its code. Let's pretend the professors of Harry Potter are: <em>"Snape", "Lupin", "Hagrid",</em> and <em>"Dumbledore"</em>.  </span></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4')">Show solution</button></p>
 <pre id="sol_4" class="code-overflow-wrap solution-code"><code class="language-python">
 def is_prof_friend_of_harry(p_name):
@@ -373,7 +389,7 @@ print(is_prof_friend_of_harry(&quot; Bellatrix  &quot;))
 </code></pre>
 <h3 id="2nd-exercise">2nd Exercise</h3>
 <p>Each house of Hogwarts has a score which is updated based on some actions such as exams grades and the rules violation. Let's pretend we have a list of the houses <code class="py">houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]</code> and another list containing the score of each house <code class="py">scores = [0,0,0,0]</code>,  such that the score value in position N of the scores list belongs to the house in position N of the houses list .</p>
-<p><strong>a)</strong> Define the function <code>update_house_score()</code> function which increments/decrements the score of a specific house with a given points. The function takes three parameters: <code>house_name</code>, <code>action</code> (string value "+"/"-"), and <code>points</code>.<br />
+<p><strong>2.a)</strong> Define the function <code>update_house_score()</code> function which increments/decrements the score of a specific house with a given points. The function takes three parameters: <code>house_name</code>, <code>action</code> (string value "+"/"-"), and <code>points</code>.<br />
 <strong>Example:</strong> Calling the function this way: <code class="py">update_house_score("Gryffindor","+",5)</code> should increment the score of house Gryffindor by 5 points.<br />
 <strong>Hint:</strong> The function <code class="py">{list}.index({value})</code> returns the index of an element in the list, e.g. <code class="py">houses.index("Hufflepuff")</code> returns the value <em>1</em></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5')">Show solution</button></p>
@@ -387,7 +403,7 @@ def update_house_score(house_name,action,points):
     else:
         scores[index] -= points
 </code></pre>
-<p><strong>b)</strong> After the Quidditch cup the Houses have increased/decreased their scores as follows: +10 Gryffindor, +7 Hufflepuff, -3 Slytherin. After the game a member of house "Slytherin" helped a man riding his broom and his house gained back 5 points. Call the function <code>update_house_score()</code> for each action in order to update the houses points and print the two lists: <code>houses</code> and <code>scores</code>.</p>
+<p><strong>2.b)</strong> After the Quidditch cup the Houses have increased/decreased their scores as follows: +10 Gryffindor, +7 Hufflepuff, -3 Slytherin. After the game a member of house "Slytherin" helped a man riding his broom and his house gained back 5 points. Call the function <code>update_house_score()</code> for each action in order to update the houses points and print the two lists: <code>houses</code> and <code>scores</code>.</p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6')">Show solution</button></p>
 <pre id="sol_6" class="code-overflow-wrap solution-code"><code class="language-python">update_house_score(&quot;Gryffindor&quot;,&quot;+&quot;,10)
 update_house_score(&quot;Hufflepuff&quot;,&quot;+&quot;,7)
@@ -395,6 +411,13 @@ update_house_score(&quot;Slytherin&quot;,&quot;-&quot;,3)
 update_house_score(&quot;Slytherin&quot;,&quot;+&quot;,5)
 print(houses)
 print(scores)
+</code></pre>
+<p><strong>2.c)</strong> redefine <code>update_house_score()</code> using the function <code>eval()</code> (<a href="https://docs.python.org/3/library/functions.html#eval">https://docs.python.org/3/library/functions.html#eval</a>)</p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2_2c')">Show solution</button></p>
+<pre id="sol_2_2c" class="code-overflow-wrap solution-code"><code class="language-python">def update_house_score(house_name, action, points):
+    index = houses.index(house_name)
+    scores[index] = eval(str(points) + action + str(scores[index]))
+    return scores
 </code></pre></div>
             </div>
         </div>
