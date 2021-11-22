@@ -220,20 +220,20 @@ with open('files/json_sample.json', mode='r') as jsonfile:
 <p>Define a recursive function called <code class="py">pokemon_champion()</code> which takes a tournament (i.e. a list of pokemons) and returns the updated tournament list containing only the champion of the tournament. For instance <code class="py">pokemon_champion(pokemon_tournament)</code> returns the list <code class="py"> [ ("Bulbasaur",12,10) ] </code></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_1')">Show solution</button></p>
 <pre id="sol_5_1" class="code-overflow-wrap solution-code"><code class="language-python">
-def pokemon_champion(l_table):
-    len_list = len(l_table)
+def pokemon_champion(pokemon_list):
+    len_list = len(pokemon_list)
     if len_list == 1:
-        return [l_table[0]]
+        return [pokemon_list[0]]
     elif len_list == 2:
-        p_attack = l_table[0][1]
-        p_defend = l_table[1][2]
+        p_attack = pokemon_list[0][1]
+        p_defend = pokemon_list[1][2]
         if p_attack &gt; p_defend:
-            return [l_table[0]]
+            return [pokemon_list[0]]
         else:
-            return [l_table[1]]
+            return [pokemon_list[1]]
     else:
         mid = len_list // 2
-        return pokemon_champion(pokemon_champion(l_table[:mid]) + pokemon_champion(l_table[mid:]))
+        return pokemon_champion(pokemon_champion(pokemon_list[:mid]) + pokemon_champion(pokemon_list[mid:]))
 </code></pre>
 <h3 id="2nd-exercise">2nd Exercise</h3>
 <p>The CSV file <a href="https://github.com/comp-think/comp-think.github.io/tree/master/laboratory/data/pokemon_list.csv">pokemon_list.csv</a> contains a list of all the pokemons with their attacking and defending points, such that it contains three columns (in order): "Name","Attack","Defense". The total number of pokemons is 800.</p>
@@ -250,10 +250,13 @@ with open('&lt;RELATIVE-PATH&gt;/pokemon_list.csv', mode='r') as file:
 
 print(pokemon_champion(l_of_pokemons))
 </code></pre>
-<p><strong>2.b)</strong> Run the mega tournament 100 times and keep track of all the winners. Each time shuffle randomly the list of pokemons before running the tournament. Note one pokemon might can win multiple times. For each winner keep a count the total number of times he won.
-<strong>Hint:</strong> the <code>random.shuffle()</code> shuffles randomly a given list</p>
+<p><strong>2.b)</strong> Run the mega tournament 100 times and keep track of all the winners. Each time shuffle randomly the list of pokemons before running the tournament. Note one pokemon might win multiple times. For each winner keep a count for the total number tournament wins.<br />
+<strong>Hint:</strong> the function <code>random.shuffle()</code> shuffles randomly the items of a given list.<br />
+<strong>Note:</strong> you must import the random library, i.e., <code>import random</code>.<br />
+<strong>Example:</strong> <code>random.shuffle([1,2,3,4,5]) =&gt;  [3,2,1,5,4]</code></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_2b')">Show solution</button></p>
-<pre id="sol_5_2b" class="code-overflow-wrap solution-code"><code class="language-python">
+<pre id="sol_5_2b" class="code-overflow-wrap solution-code"><code class="language-python">import random
+
 winners_dict = {}
 for i in range(0,100):
   random.shuffle(l_of_pokemons)
