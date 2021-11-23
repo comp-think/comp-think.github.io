@@ -85,7 +85,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/comp-think/2021-2022/tree/master/docs/laboratory" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/comp-think/comp-think.github.io" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -132,13 +132,17 @@
 
 <h1 id="recursion-and-working-with-files">Recursion and working with files</h1>
 <h2 id="recursion">Recursion</h2>
-<p>What is it about?
-* The process of defining something in terms of itself
-* In python this happens when a function calls itself</p>
-<p>Why do we need it?
-* The code look clean and elegant
-* A complex task is broken down into simpler sub-problems
-* Some data structures like trees are easier to explore using recursion</p>
+<p><strong>What is it about?</strong>  </p>
+<ul>
+<li>The process of defining something in terms of itself</li>
+<li>In python this happens when a function calls itself</li>
+</ul>
+<p><strong>Why do we need it?</strong>  </p>
+<ul>
+<li>The code look clean and elegant  </li>
+<li>A complex task is broken down into simpler sub-problems  </li>
+<li>Some data structures like trees are easier to explore using recursion</li>
+</ul>
 <pre class="code-overflow-wrap"><code class="language-python"># Example: recursive function for calculating n! (factorial)
 def factorial_recursive(n):
     #Base case
@@ -161,61 +165,46 @@ print(factorial_recursive(5))
 <p><span style="color:red">/DIRECTORY_1/MY_PROJ_DIRECTORY/MY_PROJ_FILES/myfile.txt</span><br />
 <span style="color:orange">MY_PROJ_FILES/myfile.txt</span>
 <img src="../img/paths.png"></p>
-<pre class="code-overflow-wrap"><code class="language-python"># Reading a file:
+<pre class="code-overflow-wrap"><code class="language-python"># Writing a file:
+with open(&quot;files/txt_sample.txt&quot;,&quot;w&quot;) as my_file:
+    my_file.write(&quot;the file content!&quot;)
 
-## First approach
-my_file=open(&quot;files/freetext.txt&quot;,&quot;r&quot;)
-for line in my_file:
-    print(line)
-my_file.close()
-
-## Second approach
-with open(&quot;files/freetext.txt&quot;,&quot;r&quot;) as my_file:
+# Reading a file:
+with open(&quot;files/txt_sample.txt&quot;,&quot;r&quot;) as my_file:
     for line in my_file:
         print(line)
-
-
-# Writing a file:
-
-## First approach
-my_file=open(&quot;files/new_freetext.txt&quot;,&quot;w&quot;)
-my_file.write(&quot;the file content!&quot;)
-my_file.close()
-
-## Second approach
-with open(&quot;files/new_freetext.txt&quot;,&quot;w&quot;) as my_file:
-    my_file.write(&quot;the file content!&quot;)
 </code></pre>
 <h2 id="csv-and-json-files">CSV and JSON files</h2>
 <p>A CSV (Comma Separated Values) file is a form of plain text document which uses a particular format to organize tabular information. CSV file format is a bounded text document that uses a comma to distinguish the values</p>
-<pre class="code-overflow-wrap"><code class="language-python">
+<pre class="code-overflow-wrap"><code class="language-python">import csv
+
+# Writing a CSV file:
+with open('files/csv_sample.csv', mode='w') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    # fields is a list values
+    fields = [&quot;roma&quot;,&quot;torino&quot;,&quot;milano&quot;]
+    csvwriter.writerow(fields)
+    # rows is a list of lists
+    rows = [[&quot;genova&quot;,&quot;bologna&quot;,&quot;parma&quot;], [&quot;palermo&quot;,&quot;napoli&quot;,&quot;bari&quot;]]
+    csvwriter.writerows(rows)
+
 # Reading a CSV file:
-import csv
-with open('files/csv_example.csv', mode='r') as file:
+with open('files/csv_sample.csv', mode='r') as file:
     csvFile = csv.reader(file)
     for line in csvFile:
         print(line)
-
-# Writing a CSV file:
-import csv
-with open('files/new_csv_example.csv', mode='w') as csvfile:
-    csvwriter = csv.writer(csvfile)
-    # fields is a list values
-    csvwriter.writerow(fields)
-    # rows is a list of lists
-    csvwriter.writerows(rows)
 </code></pre>
 <p>A JSON file is used to transmit data objects consisting of attribute–value pairs and array data types</p>
-<pre class="code-overflow-wrap"><code class="language-python"># Reading a JSON file:
-import json
-with open('files/json_example.json', mode='r') as jsonfile:
-    json_object = json.load(jsonfile)
+<pre class="code-overflow-wrap"><code class="language-python">import json
 
 # Writing a JSON file:
-import json
-a_dict = {&quot;Federico&quot;:35,&quot;Stefano&quot;:22,&quot;Sandro&quot;:31}
-with open('files/new_json_example.json', mode='w') as jsonfile:
+with open('files/json_sample.json', mode='w') as jsonfile:
+    a_dict = {&quot;Federico&quot;:35,&quot;Stefano&quot;:22,&quot;Sandro&quot;:31}
     json.dump(a_dict, jsonfile)
+
+# Reading a JSON file:
+with open('files/json_sample.json', mode='r') as jsonfile:
+    json_object = json.load(jsonfile)
 </code></pre>
 <h2 id="exercises">Exercises</h2>
 <h3 id="1st-exercise">1st Exercise</h3>
@@ -231,20 +220,20 @@ with open('files/new_json_example.json', mode='w') as jsonfile:
 <p>Define a recursive function called <code class="py">pokemon_champion()</code> which takes a tournament (i.e. a list of pokemons) and returns the updated tournament list containing only the champion of the tournament. For instance <code class="py">pokemon_champion(pokemon_tournament)</code> returns the list <code class="py"> [ ("Bulbasaur",12,10) ] </code></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_1')">Show solution</button></p>
 <pre id="sol_5_1" class="code-overflow-wrap solution-code"><code class="language-python">
-def pokemon_champion(l_table):
-    len_list = len(l_table)
+def pokemon_champion(pokemon_list):
+    len_list = len(pokemon_list)
     if len_list == 1:
-        return [l_table[0]]
+        return [pokemon_list[0]]
     elif len_list == 2:
-        p_attack = l_table[0][1]
-        p_defend = l_table[1][2]
+        p_attack = pokemon_list[0][1]
+        p_defend = pokemon_list[1][2]
         if p_attack &gt; p_defend:
-            return [l_table[0]]
+            return [pokemon_list[0]]
         else:
-            return [l_table[1]]
+            return [pokemon_list[1]]
     else:
         mid = len_list // 2
-        return pokemon_champion(pokemon_champion(l_table[:mid]) + pokemon_champion(l_table[mid:]))
+        return pokemon_champion(pokemon_champion(pokemon_list[:mid]) + pokemon_champion(pokemon_list[mid:]))
 </code></pre>
 <h3 id="2nd-exercise">2nd Exercise</h3>
 <p>The CSV file <a href="https://github.com/comp-think/comp-think.github.io/tree/master/laboratory/data/pokemon_list.csv">pokemon_list.csv</a> contains a list of all the pokemons with their attacking and defending points, such that it contains three columns (in order): "Name","Attack","Defense". The total number of pokemons is 800.</p>
@@ -253,7 +242,7 @@ def pokemon_champion(l_table):
 <pre id="sol_5_2a" class="code-overflow-wrap solution-code"><code class="language-python">
 # Reading a CSV file:
 l_of_pokemons = list()
-with open('../../../../Desktop/pokemon_list.csv', mode='r') as file:
+with open('&lt;RELATIVE-PATH&gt;/pokemon_list.csv', mode='r') as file:
     csvFile = csv.reader(file)
     next(csvFile)
     for line in csvFile:
@@ -261,10 +250,13 @@ with open('../../../../Desktop/pokemon_list.csv', mode='r') as file:
 
 print(pokemon_champion(l_of_pokemons))
 </code></pre>
-<p><strong>2.b)</strong> Run the mega tournament 100 times and keep track of all the winners. Each time shuffle randomly the list of pokemons before running the tournament. Note one pokemon might had won more than one tournament, count how many times each pokemon won.<br />
-<strong>Hint:</strong> the <code>random.shuffle()</code> shuffles randomly a given list</p>
+<p><strong>2.b)</strong> Run the mega tournament 100 times and keep track of all the winners. Each time shuffle randomly the list of pokemons before running the tournament. Note one pokemon might win multiple times. For each winner keep a count for the total number tournament wins.<br />
+<strong>Hint:</strong> the function <code>random.shuffle()</code> shuffles randomly the items of a given list.<br />
+<strong>Note:</strong> you must import the random library, i.e., <code>import random</code>.<br />
+<strong>Example:</strong> <code>random.shuffle([1,2,3,4,5]) =&gt;  [3,2,1,5,4]</code></p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_2b')">Show solution</button></p>
-<pre id="sol_5_2b" class="code-overflow-wrap solution-code"><code class="language-python">
+<pre id="sol_5_2b" class="code-overflow-wrap solution-code"><code class="language-python">import random
+
 winners_dict = {}
 for i in range(0,100):
   random.shuffle(l_of_pokemons)
