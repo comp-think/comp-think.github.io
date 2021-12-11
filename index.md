@@ -129,6 +129,8 @@ The exercises of this section focus on creating a Python function according to a
 
 [**Introduction to Cultural Analytics & Python**](https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html): an interactive book written by [Melanie Walsh](https://twitter.com/mellymeldubs) which demonstrates how Python can be used to study cultural materials such as song lyrics, short stories, newspaper articles, tweets, Reddit posts, and film screenplays.
 
+[**Programming Historian**](https://programminghistorian.org/): a collection of novice-friendly, peer-reviewed tutorials that help humanists learn a wide range of digital tools, techniques, and workflows to facilitate research and teaching.
+
 
 ## License
 
