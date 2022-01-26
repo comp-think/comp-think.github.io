@@ -6,8 +6,8 @@ Write down a small function in Python that takes in input two boolean values and
 ### Solution
 ```python
 # Test case for the function
-def test_f(n1, n2, b, expected):
-    result = f(n1, n2, b)
+def test_xor(b1, b2, expected):
+    result = xor(b1, b2)
     if expected == result:
         return True
     else:
@@ -15,18 +15,15 @@ def test_f(n1, n2, b, expected):
 
 
 # Code of the function
-def f(n1, n2, b):
-    if b:
-        return n1 * n2
-    else:
-        return n1 // n2
+def xor(b1, b2):
+    return (b1 and not b2) or (not b1 and b2)
 
 
 # Tests
-print(test_f(2, 3, True, 6))
-print(test_f(2, 3, False, 0))
-print(test_f(3, 3, True, 9))
-print(test_f(3, 3, False, 1))
+print(test_xor(True, True, False))
+print(test_xor(True, False, True))
+print(test_xor(False, True, True))
+print(test_xor(False, False, False))
 ``` 
 
 ### Additional material
