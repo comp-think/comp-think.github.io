@@ -3,11 +3,11 @@
 ### Text
 The **Quick Gestalt Pattern Matching** is a statistic used for comparing the similarity of two strings. In particular, given two strings *S* and *T*, the measure is calculated by considering twice the number K<sub>m</sub> of all used characters in *S* which occur in *T* divided by the sum of the number of characters in *S* and *T*: 
 
-```
-  2 * K<sub>m</sub>
----------
-|S| + |T|
-```
+<pre>
+<code>  2 * K</code><sub><code>m</code></sub>
+<code>---------
+|S| + |T|</code>
+<pre>
 
 Write an algorithm in Python – `def qgpm(s, t)` – which takes in input two strings and returns the Gestalt Pattern Matching statistic.
 
