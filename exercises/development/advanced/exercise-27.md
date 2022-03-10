@@ -7,7 +7,7 @@ The **Quick Gestalt Pattern Matching** is a statistic used for comparing the sim
 <code>  2 * K</code><sub><code>m</code></sub>
 <code>---------
 |S| + |T|</code>
-<pre>
+</pre>
 
 Write an algorithm in Python – `def qgpm(s, t)` – which takes in input two strings and returns the Gestalt Pattern Matching statistic.
 
