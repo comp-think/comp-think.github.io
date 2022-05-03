@@ -36,7 +36,7 @@ def qgpm(s, t):
     return (2 * common) / (len(s) + len(t))
 
 
-
+# Tests
 print(test_qgpm("ciao", "ciao", 1))
 print(test_qgpm("mummy", "my", 4 / 7))
 print(test_qgpm("m", "mummy", 2 / 6))

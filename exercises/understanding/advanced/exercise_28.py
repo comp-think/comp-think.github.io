@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2021, Silvio Peroni <essepuntato@gmail.com>
+# Copyright (c) 2022, Silvio Peroni <essepuntato@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any purpose
 # with or without fee is hereby granted, provided that the above copyright notice
@@ -13,30 +13,26 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 
-
-# Test case for the function
-def test_qgpm(s, t, expected):
-    result = qgpm(s, t)
-    if expected == result:
-        return True
-    else:
-        return False
+from re import sub
 
 
-# Code of the function
-def qgpm(s, t):
-    common = 0
-    t_list = list(t)
+def sc(chars, mat_list):
+    n_op = []
+    
+    ln = len(mat_list)
+    for idx in range(ln // 2):
+        cur = mat_list[idx] + mat_list[ln - (1 + idx)]
+        n_op.append(cur)
+    
+    result = set()
+    for n in n_op:
+        c = chars[n % len(chars)]
+        result.add(c)
+    
+    return result        
 
-    for c in s:
-        if c in t_list:
-            common += 1
-            t_list.remove(c)
-        
-    return (2 * common) / (len(s) + len(t))
 
-
-# Tests
-print(test_qgpm("ciao", "ciao", 1))
-print(test_qgpm("mummy", "my", 4 / 7))
-print(test_qgpm("m", "mummy", 2 / 6))
+my_mat = list(input("Please provide your matriculation number: ").strip())
+my_mat_list = [int(i) for i in my_mat]
+my_chars = sub(" +", "", input("Please provide your full name: ").lower())
+print("Result:", sc(my_chars, my_mat_list))

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2021, Silvio Peroni <essepuntato@gmail.com>
+# Copyright (c) 2022, Silvio Peroni <essepuntato@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any purpose
 # with or without fee is hereby granted, provided that the above copyright notice
@@ -14,29 +14,12 @@
 # SOFTWARE.
 
 
-# Test case for the function
-def test_qgpm(s, t, expected):
-    result = qgpm(s, t)
-    if expected == result:
-        return True
-    else:
-        return False
+def f(n):
+    result = list()
+    while n > 0:
+        result.append(n)
+        n = n -1
+    return len(result)
 
 
-# Code of the function
-def qgpm(s, t):
-    common = 0
-    t_list = list(t)
-
-    for c in s:
-        if c in t_list:
-            common += 1
-            t_list.remove(c)
-        
-    return (2 * common) / (len(s) + len(t))
-
-
-# Tests
-print(test_qgpm("ciao", "ciao", 1))
-print(test_qgpm("mummy", "my", 4 / 7))
-print(test_qgpm("m", "mummy", 2 / 6))
+print(f(3))

@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_qgpm(s, t, expected):
-    result = qgpm(s, t)
+def test_f(s, n, expected):
+    result = f(s, n)
     if expected == result:
         return True
     else:
@@ -24,19 +24,15 @@ def test_qgpm(s, t, expected):
 
 
 # Code of the function
-def qgpm(s, t):
-    common = 0
-    t_list = list(t)
-
-    for c in s:
-        if c in t_list:
-            common += 1
-            t_list.remove(c)
-        
-    return (2 * common) / (len(s) + len(t))
+def f(s, n):
+    if n < len(s):
+        return s[n]
+    else:
+        return None
 
 
 # Tests
-print(test_qgpm("ciao", "ciao", 1))
-print(test_qgpm("mummy", "my", 4 / 7))
-print(test_qgpm("m", "mummy", 2 / 6))
+print(test_f("ciao", 4, None))
+print(test_f("ciao", 0, "c"))
+print(test_f("ciao", 2, "a"))
+print(test_f("ciao", 7, None))

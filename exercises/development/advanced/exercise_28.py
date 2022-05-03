@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2021, Silvio Peroni <essepuntato@gmail.com>
+# Copyright (c) 2022, Silvio Peroni <essepuntato@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any purpose
 # with or without fee is hereby granted, provided that the above copyright notice
@@ -15,8 +15,8 @@
 
 
 # Test case for the function
-def test_qgpm(s, t, expected):
-    result = qgpm(s, t)
+def test_nearest(list_i, expected):
+    result = nearest(list_i)
     if expected == result:
         return True
     else:
@@ -24,19 +24,27 @@ def test_qgpm(s, t, expected):
 
 
 # Code of the function
-def qgpm(s, t):
-    common = 0
-    t_list = list(t)
+def nearest(list_i):
+    result = []
 
-    for c in s:
-        if c in t_list:
-            common += 1
-            t_list.remove(c)
+    for idx, v in enumerate(list_i):
+        smaller = []
         
-    return (2 * common) / (len(s) + len(t))
+        for p in list_i[:idx]:
+            if p < v:
+                smaller.append(p)
+        
+        if smaller:
+            result.append(smaller[-1])
+        else:
+            result.append(None)
+
+    return result
 
 
 # Tests
-print(test_qgpm("ciao", "ciao", 1))
-print(test_qgpm("mummy", "my", 4 / 7))
-print(test_qgpm("m", "mummy", 2 / 6))
+print(test_nearest([], []))
+print(test_nearest([7], [None]))
+print(test_nearest([7, 3], [None, None]))
+print(test_nearest([3, 7], [None, 3]))
+print(test_nearest([0, 8, 4, 12, 2, 10, 6, 14, 1], [None, 0, 0, 4, 0, 2, 2, 6, 0]))
