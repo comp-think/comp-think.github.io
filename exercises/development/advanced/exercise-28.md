@@ -1,4 +1,4 @@
-## Development - Advanced, exercise 27
+## Development - Advanced, exercise 28
 
 ### Text
 An algorithm to compute the all nearest smaller values of an input list of numbers `Li` returns a new list of numbers Lo where at index `idx` in `Lo` – i.e. `Lo[idx]` – there is the value of the item in the sublist `Li[0:idx]` which is smaller than `Li[idx]` at the index closest to `idx`. For instance, starting from the following list (indexes of the items in the list in red)
