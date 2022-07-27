@@ -16,22 +16,21 @@
 from re import sub
 
 
-def cou(mat, n_char):
-    n_char_in_mat = n_char % len(mat)
-    idx = int(mat[n_char_in_mat])
+def chk(name, mat):
+    result = list()
+    
+    l_mat = len(mat)
+    if l_mat > 0:
+        max = l_mat // 2
 
-    mat_l = []
-    for c in mat:
-        mat_l.append(c)
+        for idx in range(max):
+            c = name[idx % len(name)]
+            result.append(c)
 
-    result = []
-    while len(mat_l) > 0:
-        jdx = idx % len(mat_l)
-        result.append(mat_l[jdx])
-        mat_l = mat_l[:jdx]
+        result.extend(chk(name, mat[:max]))      
     
     return result
 
 my_name = sub(" +", "", input("Please provide your name: ").lower())
-my_mat = sub(" +", "", input("Please provide your matriculation number: ").lower())
-print("Result:", cou(my_mat, len(my_name)))
+my_mat = [int(n) for n in sub(" +", " ", input("Please provide your matriculation number: ").lower())]
+print("Result:", chk(my_name, my_mat))

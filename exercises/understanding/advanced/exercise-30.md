@@ -4,9 +4,6 @@
 The variable `my_mat` contains the string of a 10-digit matriculation number (e.g. `"0235145398"`), and `my_n_char` is the number of alphabetic characters (i.e. excluding spaces) of your given name (e.g. for `"John"` the value of the variable is 4). What is the value returned by calling the function sc as shown as follows: `cou(my_mat, my_n_char)`.
 
 ```python
-from collections import deque
-
-
 def cou(mat, n_char):
     n_char_in_mat = n_char % len(mat)
     idx = int(mat[n_char_in_mat])

@@ -13,25 +13,32 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 
-from re import sub
+
+# Test case for the function
+def test_naive_ss(s, t, expected):
+    result = naive_ss(s, t)
+    if result == expected:
+        return True
+    else:
+        return False
 
 
-def cou(mat, n_char):
-    n_char_in_mat = n_char % len(mat)
-    idx = int(mat[n_char_in_mat])
-
-    mat_l = []
-    for c in mat:
-        mat_l.append(c)
-
-    result = []
-    while len(mat_l) > 0:
-        jdx = idx % len(mat_l)
-        result.append(mat_l[jdx])
-        mat_l = mat_l[:jdx]
+# Code of the function
+def naive_ss(s, t):
+    idx = 0
+    s_len = len(s)
+    t_len = len(t)
     
-    return result
+    while idx + s_len <= t_len:
+        if s == t[idx:idx+s_len]:
+            return idx, idx + s_len - 1
+        idx = idx + 1
+    
+    return None
 
-my_name = sub(" +", "", input("Please provide your name: ").lower())
-my_mat = sub(" +", "", input("Please provide your matriculation number: ").lower())
-print("Result:", cou(my_mat, len(my_name)))
+
+
+# Tests
+print(test_naive_ss("aaa", "aaaaa", (0, 2)))
+print(test_naive_ss("baa", "aababaa", (4, 6)))
+print(test_naive_ss("bbb", "aaaaa", None))

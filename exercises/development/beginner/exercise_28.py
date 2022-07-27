@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2022, Silvio Peroni <essepuntato@gmail.com>
+# Copyright (c) 2021, Silvio Peroni <essepuntato@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any purpose
 # with or without fee is hereby granted, provided that the above copyright notice
@@ -13,25 +13,26 @@
 # ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 # SOFTWARE.
 
-from re import sub
+
+# Test case for the function
+def test_f(s, i, expected):
+    result = f(s, i)
+    if expected == result:
+        return True
+    else:
+        return False
 
 
-def cou(mat, n_char):
-    n_char_in_mat = n_char % len(mat)
-    idx = int(mat[n_char_in_mat])
+# Code of the function
+def f(s, i):
+    if i < len(s):
+        return s[i] in "aeiou"
+    else:
+        return False
 
-    mat_l = []
-    for c in mat:
-        mat_l.append(c)
 
-    result = []
-    while len(mat_l) > 0:
-        jdx = idx % len(mat_l)
-        result.append(mat_l[jdx])
-        mat_l = mat_l[:jdx]
-    
-    return result
-
-my_name = sub(" +", "", input("Please provide your name: ").lower())
-my_mat = sub(" +", "", input("Please provide your matriculation number: ").lower())
-print("Result:", cou(my_mat, len(my_name)))
+# Tests
+print(test_f("ciao", 2, True))
+print(test_f("ciao", 0, False))
+print(test_f("ciao", 1, True))
+print(test_f("ciao", 7, False))
