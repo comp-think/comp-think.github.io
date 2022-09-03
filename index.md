@@ -4,7 +4,7 @@ This is the official book originally written by [Silvio Peroni](https://essepunt
 
 It includes several Python sources, exercises and the related keys. Each chapter starts by introducing an *historic hero* (either computer scientists, writers, philosophers, or computational agents) who is functional to discuss the main topic addressed in the chapter. 
 
-Also, the book is accompanied by additional material and exercises so as to improve computational thinking skills and Python programming.
+Also, the book is accompanied by laboratory notes (written by [Ivan Heibi](https://ivanhb.it)), additional material and exercises so as to improve computational thinking skills and Python programming.
 
 Please do not hesitate to contact the author for any suggestion and comment on the book on [Twitter](https://twitter.com/essepuntato) or by [email](mailto:essepuntato@gmail.com).
 
@@ -73,6 +73,18 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 12. [peg_solitaire.py](python/peg_solitaire.py)
 13. [graph_instructions.py](python/graph_instructions.py), [multigraph_instructions.py](python/multigraph_instructions.py), [graph_attribute_instructions.py](python/graph_attribute_instructions.py)
 14. [line_wrap.py](python/line_wrap.py)
+
+
+## Laboratory notes
+
+The [table of contents](laboratory/) of the laboratory notes includes the following six distinct practical lectures:
+
+1. [Getting started with Python](laboratory/chapter/01/)
+2. [Programming in Python - the basics](laboratory/chapter/02/)
+3. [Working with lists and tuples](laboratory/chapter/03/)
+4. [Working with unordered structures](laboratory/chapter/04/)
+5. [Recursion and working with files](laboratory/chapter/05/)
+6. [Data analysis on Netflix shows](laboratory/chapter/06/)
 
 
 ## Keys of the exercises in each chapter
