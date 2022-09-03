@@ -75,18 +75,6 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 14. [line_wrap.py](python/line_wrap.py)
 
 
-## Laboratory notes
-
-The [table of contents](laboratory/) of the laboratory notes includes the following six distinct practical lectures:
-
-1. [Getting started with Python](laboratory/chapter/01/)
-2. [Programming in Python - the basics](laboratory/chapter/02/)
-3. [Working with lists and tuples](laboratory/chapter/03/)
-4. [Working with unordered structures](laboratory/chapter/04/)
-5. [Recursion and working with files](laboratory/chapter/05/)
-6. [Data analysis on Netflix shows](laboratory/chapter/06/)
-
-
 ## Keys of the exercises in each chapter
 
 1. Exercises [1](keys/01/exercise-1), [2](keys/01/exercise-2), [3](keys/01/exercise-3)
@@ -103,6 +91,18 @@ The [table of contents](laboratory/) of the laboratory notes includes the follow
 12. Exercises [1](keys/12/exercise-1), [2](keys/12/exercise-2)
 13. Exercises [1](keys/13/exercise-1), [2](keys/13/exercise-2)
 14. Exercises [1](keys/14/exercise-1), [2](keys/14/exercise-2)
+
+
+## Laboratory notes
+
+The [table of contents](laboratory/) of the laboratory notes includes the following six distinct practical lectures:
+
+1. [Getting started with Python](laboratory/chapter/01/)
+2. [Programming in Python - the basics](laboratory/chapter/02/)
+3. [Working with lists and tuples](laboratory/chapter/03/)
+4. [Working with unordered structures](laboratory/chapter/04/)
+5. [Recursion and working with files](laboratory/chapter/05/)
+6. [Data analysis on Netflix shows](laboratory/chapter/06/)
 
 
 ## Additional exercises
