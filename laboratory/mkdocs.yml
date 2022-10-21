@@ -1,0 +1,21 @@
+site_name: Computational Thinking - Laboratory
+extra_css: [extra.css]
+extra_javascript: [extra.js]
+repo_url: https://github.com/comp-think/comp-think.github.io
+edit_uri: ""
+theme:
+    name: mkdocs
+    nav_style: light
+
+markdown_extensions:
+  - toc:
+      toc_depth: 3
+nav:
+  - Home: index.md
+  - Chapters:
+    - 1. Getting started with Python: chapter/01.md
+    - 2. Programming in Python - the basics: chapter/02.md
+    - 3. Working with lists and tuples: chapter/03.md
+    - 4. Working with unordered structures: chapter/04.md
+    - 5. Recursion and working with files: chapter/05.md
+    - 6. Data analysis on Netflix shows: chapter/06.md

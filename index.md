@@ -95,14 +95,14 @@ Please do not hesitate to contact the author for any suggestion and comment on t
 
 ## Laboratory notes
 
-The [table of contents](laboratory/) of the laboratory notes includes the following six distinct practical lectures:
+The [table of contents](laboratory/site/) of the laboratory notes includes the following six distinct practical lectures:
 
-1. [Getting started with Python](laboratory/chapter/01/)
-2. [Programming in Python - the basics](laboratory/chapter/02/)
-3. [Working with lists and tuples](laboratory/chapter/03/)
-4. [Working with unordered structures](laboratory/chapter/04/)
-5. [Recursion and working with files](laboratory/chapter/05/)
-6. [Data analysis on Netflix shows](laboratory/chapter/06/)
+1. [Getting started with Python](laboratory/site/chapter/01/)
+2. [Programming in Python - the basics](laboratory/site/chapter/02/)
+3. [Working with lists and tuples](laboratory/site/chapter/03/)
+4. [Working with unordered structures](laboratory/site/chapter/04/)
+5. [Recursion and working with files](laboratory/site/chapter/05/)
+6. [Data analysis on Netflix shows](laboratory/site/chapter/06/)
 
 
 ## Additional exercises
