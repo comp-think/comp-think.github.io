@@ -134,7 +134,7 @@
 <li>The items of a set can't be accessed by referring to an index or a key</li>
 <li>A Set contains only immutable data types, e.g. strings, numbers, or tuples</li>
 </ul>
-<pre><code class="py"># create a set of string items
+<pre><code class="language-py"># create a set of string items
 a_set = {&quot;Roma&quot;, &quot;Torino&quot;, &quot;Bologna&quot;}
 
 # create a set from a list
@@ -162,7 +162,6 @@ new_set = a_set.intersection(b_set)
 new_set = a_set.difference(b_set)
 #OUTPUT: {'Bologna', 'Torino'}
 </code></pre>
-
 <h2 id="dictionaries">Dictionaries</h2>
 <ul>
 <li>A data structure that can store data in the form of key-value pairs</li>
@@ -171,7 +170,7 @@ new_set = a_set.difference(b_set)
 <li>The key values should be immutable data types, e.g. strings, numbers, or tuples</li>
 <li>A dictionary can't contain duplicate keys</li>
 </ul>
-<pre><code class="py"># create a dictionary
+<pre><code class="language-py"># create a dictionary
 ages_dict = {}
 
 # add a new (key,value) pair
@@ -194,18 +193,17 @@ a_dict = {&quot;Pippo&quot;:34}
 ages_dict.update(a_dict) #updates ages_dict with the (key,value) pairs of a_dict
 #OUTPUT: {'Alessia': 22, 'Giulia':21, 'Pippo':34}
 </code></pre>
-
 <h2 id="exercises">Exercises</h2>
 <h3 id="1st-exercise">1st Exercise</h3>
 <p>The variable <code class="py">lyrics</code> contains the lyrics (string value) of the song "Lonely Boy" by "The Black Keys". The words are all written in lowercase and the line breaks are represented with <code class="py">;;</code>   </p>
-<pre><code class="py">lyrics = &quot;well i’m so above you ;; and it’s plain to see ;; but i came to love you anyway ;; so you pulled my heart out ;; and i don’t mind bleeding ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; well your mama kept you but your daddy left you ;; and i should’ve done you just the same ;; but i came to love you ;; am i born to bleed? ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; hey! ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting&quot;
+<pre><code class="language-py">lyrics = &quot;well i’m so above you ;; and it’s plain to see ;; but i came to love you anyway ;; so you pulled my heart out ;; and i don’t mind bleeding ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; well your mama kept you but your daddy left you ;; and i should’ve done you just the same ;; but i came to love you ;; am i born to bleed? ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; hey! ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting&quot;
 </code></pre>
-
 <p><strong>1.a)</strong> Define the function <code>clean_lyrics()</code> which takes <code>lyrics</code> as parameter and returns a set of all the unique words of the song excluding the following words <code class="py">['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s']</code>. Once defined call the function and print its outcome.  </p>
 <p><strong>Hint:</strong> in python the function <code>{string}.split({separator})</code> splits a string into a list of words using <code>{separator}</code> as splitter between the words in the string. For instance, <code>"Hi my name is James".split(" ")  -&gt; ["Hi", "my", "name", "is", "James"]</code></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1a')">Show solution</button>
-<div class="solution-code" id="sol_4_1a"></p>
-<pre><code class="py">def clean_lyrics(txt_lyrics):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1a')">Show solution</button></p>
+<div class="solution-code" id="sol_4_1a">
+
+<pre><code class="language-py">def clean_lyrics(txt_lyrics):
     lyrics_set = set(txt_lyrics.split(&quot; &quot;))
     unwanted_list = ['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s']
     unwanted_set = set(unwanted_list)
@@ -217,9 +215,10 @@ print(clean_lyrics(lyrics))
 </div>
 
 <p><strong>1.b)</strong> Define the function <code>family_words()</code> which takes the outcome of <code>clean_lyrics()</code> as parameter and return the number of words that are also part of the following list <code>["mama","daddy","sister","brother","boy","girl"]</code>.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1b')">Show solution</button>
-<div class="solution-code" id="sol_4_1b"></p>
-<pre><code class="py">def family_words(l_words):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1b')">Show solution</button></p>
+<div class="solution-code" id="sol_4_1b">
+
+<pre><code class="language-py">def family_words(l_words):
     clean_set = set(l_words)
     l_words = [&quot;mama&quot;, &quot;daddy&quot;, &quot;sister&quot;, &quot;brother&quot;, &quot;boy&quot;, &quot;girl&quot;]
     s_words = set(l_words)
@@ -232,9 +231,10 @@ print(l_clean_lyrics)
 </div>
 
 <p><strong>1.c)</strong> Define the function <code class="py">count_words()</code> which takes <code class="py">lyrics</code> as parameter and returns a dictionary with all the unique words as keys and the occurrences of each word as value. The dictionary must not include the following words <code class="py">['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s']</code>.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1c')">Show solution</button>
-<div class="solution-code" id="sol_4_1c"></p>
-<pre><code class="py">def count_words(txt_lyrics):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1c')">Show solution</button></p>
+<div class="solution-code" id="sol_4_1c">
+
+<pre><code class="language-py">def count_words(txt_lyrics):
     result_dict = {}
     lyrics_l = txt_lyrics.split(&quot; &quot;)
     unwated_list = ['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s']
@@ -251,13 +251,13 @@ print(count_dict)
 </div>
 
 <p><strong>1.d)</strong> Andrea wants to create a playlist with some songs by The Black Keys. He wrote down on a paper the list of songs he would like to include. For each song first, he wrote the name of the album and then the title of the song contained in it. The two values are separated using <em>"::"</em>. For instance, in <code class="py">el_camino::lonely_boy</code> the album name is "el_camino" and "lonely_boy" is the title of the song. Here we have the entire playlist of Andrea, the songs are separated by <em>";;"</em>:</p>
-<pre><code class="py">playlist_txt = &quot;el camino::lonely boy ;; el camino::little black submarine ;; el camino::gold on the ceiling ;; turn blue::fever ;; turn blue::gotta get away ;; brothers::howlin for you ;; brothers::tighten up ;; turn blue::it is up to you now&quot;
+<pre><code class="language-py">playlist_txt = &quot;el camino::lonely boy ;; el camino::little black submarine ;; el camino::gold on the ceiling ;; turn blue::fever ;; turn blue::gotta get away ;; brothers::howlin for you ;; brothers::tighten up ;; turn blue::it is up to you now&quot;
 </code></pre>
-
 <p>Define the function <code class="py">build_playlist_dict()</code> which takes <code class="py">playlist_txt</code> as parameter and creates a dictionary having the album titles as keys each key will have the list of all its corresponding songs.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1d')">Show solution</button>
-<div class="solution-code" id="sol_4_1d"></p>
-<pre><code class="py">def build_playlist_dict(a_txt):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4_1d')">Show solution</button></p>
+<div class="solution-code" id="sol_4_1d">
+
+<pre><code class="language-py">def build_playlist_dict(a_txt):
     result_dict = {}
     songs = a_txt.split(&quot; ;; &quot;)
     for a_song in songs:
@@ -275,7 +275,7 @@ print(build_playlist_dict(playlist_txt))
 
 <h3 id="2nd-exercise">2nd Exercise</h3>
 <p>Giving a collection of pokemon cards (i.e. a list) we want to readapt it following the pokemon-evolution rules, such that if we have two cards in our deck representing the same pokemon we must replace them with one card representing the evolved version of that pokemon. The evolution rules are defined in the following dictionary:</p>
-<pre><code class="py">evolution_map = {
+<pre><code class="language-py">evolution_map = {
     &quot;Poliwag&quot;: &quot;Poliwhirl&quot;,
     &quot;Bulbasaur&quot;: &quot;Ivysaur&quot;,
     &quot;Charmander&quot;: &quot;Charmeleon&quot;,
@@ -284,18 +284,17 @@ print(build_playlist_dict(playlist_txt))
     &quot;Abra&quot;: &quot;Kadabra&quot;
 }
 </code></pre>
-
 <p>For instance:</p>
-<pre><code class="py">l_cards = [&quot;Poliwag&quot;, &quot;Pidgey&quot;, &quot;Abra&quot;, &quot;Pidgey&quot;, &quot;Charmander&quot;, &quot;Bulbasaur&quot;, &quot;Charmander&quot;, &quot;Psyduck&quot;, &quot;Poliwag&quot;,&quot;Goldeen&quot;]
+<pre><code class="language-py">l_cards = [&quot;Poliwag&quot;, &quot;Pidgey&quot;, &quot;Abra&quot;, &quot;Pidgey&quot;, &quot;Charmander&quot;, &quot;Bulbasaur&quot;, &quot;Charmander&quot;, &quot;Psyduck&quot;, &quot;Poliwag&quot;,&quot;Goldeen&quot;]
 
 # The new list should be:
 # ['Poliwhirl', 'Charmeleon', 'Bulbasaur', 'Psyduck', 'Pidgeotto', 'Goldeen', 'Abra']
 </code></pre>
-
 <p>Define the function <code class="py">pokemon_cards()</code> which takes a list of pokemon cards and returns a new list of pokemon cards which follows the pokemon-evolution rules.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_1')">Show solution</button>
-<div class="solution-code" id="sol_5_1"></p>
-<pre><code class="py">def pokemon_cards(l_pokemons):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5_1')">Show solution</button></p>
+<div class="solution-code" id="sol_5_1">
+
+<pre><code class="language-py">def pokemon_cards(l_pokemons):
     card_checked = set()
     new_l_pokemons = list()
     for pok in l_pokemons:

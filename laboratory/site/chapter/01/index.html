@@ -141,20 +141,20 @@
 In computing, a <a href="https://en.wikipedia.org/wiki/Shell_(computing)">shell</a> is a user interface for accessing the services of an operating system. It can be a <a href="https://en.wikipedia.org/wiki/Command-line_interface">command-line interface (CLI)</a> or a <a href="https://en.wikipedia.org/wiki/Graphical_user_interface">graphical user interface (GUI)</a>. It enables a user to perform several operations, such as file management, installations, running processes, monitoring and configuring an OS. We will use it to install packages and as an interpreter for Python.
 </span></p>
 <h3 id="open-the-command-line-interface-cli">Open the Command Line Interface (CLI)</h3>
-<h4>Windows</h4>
+<h4 id="windows">Windows</h4>
 <ul>
 <li>Open the Windows menu</li>
 <li>Type <em>"powershell"</em> in the search bar</li>
 <li>Select <strong>Windows PowerShell</strong> from the search results</li>
 </ul>
-<h4>macOS</h4>
+<h4 id="macos">macOS</h4>
 <ul>
 <li>Open the Spotlight search box in the upper right-hand corner</li>
 <li>Type <em>"terminal"</em> in the search bar</li>
 <li>Click on <strong>Terminal</strong> or just hit return if it is the first result</li>
 </ul>
 <p><span class="note">Alternatively, go to the directory <span class="dir">Applications/Utility</span> and open <strong>Terminal</strong> application.</span></p>
-<h4>Linux (Ubuntu)</h4>
+<h4 id="linux-ubuntu">Linux (Ubuntu)</h4>
 <ul>
 <li>Open the applications drawer</li>
 <li>Type <em>"terminal"</em> or <em>"konsole"</em> in the search bar</li>
@@ -168,10 +168,9 @@ Alternatively, you can press the combination Ctrl+Alt+T to open the terminal rap
 <pre><code>python --version
 Python 2.7.3
 </code></pre>
-
 <p>Try to type <code>python3 --version</code> (also <code>python3 -V</code> on Windows) in the command line, then press return to check whether you have Python 3 installed, and eventually the last version.</p>
 <h2 id="download-and-install-python">Download and install Python</h2>
-<h4>Windows</h4>
+<h4 id="windows_1">Windows</h4>
 <ul>
 <li>Go to the <a href="https://www.python.org/downloads/">Python download page</a></li>
 <li>Click on the download button to get the latest version of <strong>Python</strong></li>
@@ -189,7 +188,7 @@ Python 2.7.3
 <li>Click on the <strong>Install</strong> button, and wait until the end of the installation</li>
 <li>Finally, go to the command line and try to type <code>python --version</code> (also <code>python3 -V</code>) and press return to check whether you correctly installed Python.</li>
 </ul>
-<h4>macOS</h4>
+<h4 id="macos_1">macOS</h4>
 <ul>
 <li>Go to the <a href="https://www.python.org/downloads/">Python download page</a></li>
 <li>Click on the download button to get the latest version of <strong>Python</strong></li>
@@ -197,7 +196,7 @@ Python 2.7.3
 <li>Follow the step-by-step guidelines</li>
 <li>Finally, go to the command line and try to type <code>python --version</code> (also <code>python3 --version</code> in case you have also Python 2) and press return to check whether you correctly installed Python</li>
 </ul>
-<h4>Linux (Ubuntu)</h4>
+<h4 id="linux-ubuntu_1">Linux (Ubuntu)</h4>
 <ul>
 <li>Open the Command Line Interface (Terminal or Console)</li>
 <li>Type <code>sudo apt-get update</code></li>
@@ -217,7 +216,6 @@ Python 2.7.3
 <pre><code>&gt;&gt;&gt; print(&quot;Hello world&quot;)
 Hello World
 </code></pre>
-
 <ul>
 <li>Type <code>exit()</code> and press enter to exit from the python interactive mode.</li>
 </ul>
@@ -247,7 +245,7 @@ Hello World
 </ul>
 <h2 id="install-the-editor-visual-studio-code">Install the editor: Visual Studio Code</h2>
 <p>Programming using the shell interpreter is convenient for small tests but impractical for developing complex applications. For this reason, special editors, called <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environments</a> (IDE), are used. For Python, the most widely used IDEs are Visual Studio Code, PyCharm and Atom. We suggest using Visual Studio Code for this course.</p>
-<h4>Windows</h4>
+<h4 id="windows_2">Windows</h4>
 <ul>
 <li>Download the <a href="https://code.visualstudio.com/docs?dv=win">Visual Studio Code installer</a> for Windows.</li>
 <li>Run the downloaded installer (VSCodeUserSetup-{version}.exe). This will only take a minute</li>
@@ -255,7 +253,7 @@ Hello World
 </ul>
 <p><span class="note"><strong>Note:</strong> .NET Framework 4.5.2 or higher is required for VS Code. If you are using Windows 7, make sure you have at least <a href="https://www.microsoft.com/download/details.aspx?id=42643">.NET Framework 4.5.2</a> installed. You can check your version of .NET Framework using this command, <code>reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\full" /v version</code> from a command prompt.</span></p>
 <p><span class="note"><strong>Note:</strong> you can find more details at <a href="https://code.visualstudio.com/docs/setup/windows">https://code.visualstudio.com/docs/setup/windows</a></span></p>
-<h4>macOS</h4>
+<h4 id="macos_2">macOS</h4>
 <ul>
 <li>Download <a href="https://go.microsoft.com/fwlink/?LinkID=534106">Visual Studio Code</a> for macOS.</li>
 <li>Open the browser's download list and locate the downloaded archive.</li>
@@ -263,7 +261,7 @@ Hello World
 <li>Drag <strong>Visual Studio Code.app</strong> to the Applications folder, making it available in the macOS Launchpad.</li>
 </ul>
 <p><span class="note"><strong>Note:</strong> you can find more details at <a href="https://code.visualstudio.com/docs/setup/mac">https://code.visualstudio.com/docs/setup/mac</a></span></p>
-<h4>Linux</h4>
+<h4 id="linux">Linux</h4>
 <p>For Debian/Ubuntu based distributions, download and install the <a href="https://go.microsoft.com/fwlink/?LinkID=760868">.deb package (64-bit)</a>, either through the graphical software center if it's available, or through the command line with: <code>sudo apt install ./&lt;file&gt;.deb</code></p>
 <p><span class="note"><strong>Note:</strong> you can find more details and guidelines for other linux distributions at <a href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></span></p>
 <h2 id="create-and-run-a-python-script-in-visual-studio-code">Create and run a Python script in Visual Studio Code</h2>
@@ -290,9 +288,8 @@ Hello World
 <!-- <button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_1')">Show solution</button>s
 ```{.python .code-overflow-wrap .solution-code #sol_1}-->
 
-<pre><code class="py">print(&quot;Hello World !!&quot;)
+<pre><code class="language-py">print(&quot;Hello World !!&quot;)
 </code></pre>
-
 <ul>
 <li>Run the script by clicking on the menu arrow near the run button and selecting <strong>Run Python File in Terminal</strong><br />
 <img src="../img/vsc_run.png"></li>
