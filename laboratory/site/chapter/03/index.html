@@ -244,14 +244,14 @@ print(times)
 
 </div>
 
-<p><strong>1.d)</strong> One of the students attending the course, Tim Berners Lee, thinks he knows enough about the materials taught in the course, so he will take a break and go on a vacation on 12/11/21 for two weeks. Right after that, when he returns, he will attend the lectures again, starting from the first available one according to the schedule until the end of the course. Write down a portion of the code that prints the titles of the lectures that Tim Berners Lee will attend at the end of the course.</p>
+<p><strong>1.d)</strong> One of the students attending the course, Tim Berners Lee, thinks he knows enough about the materials taught in the course, so he will take a break and go on a vacation on 11/11/22 for two weeks. Right after that, when he returns, he will attend the lectures again, starting from the first available one according to the schedule until the end of the course. Write down a portion of the code that prints the titles of the lectures that Tim Berners Lee will attend at the end of the course.</p>
 <p><strong>Hint:</strong> take a look at the <code>datetime</code> library</p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1d')">Show solution</button></p>
 <div class="solution-code" id="sol_3_1d">
 
 <pre><code class="language-py">from datetime import datetime
 
-vacation_date = datetime.strptime(&quot;12/11/21&quot;, '%d/%m/%y')
+vacation_date = datetime.strptime(&quot;11/11/22&quot;, '%d/%m/%y')
 back_date = vacation_date + datetime.timedelta(weeks=2)
 result = []
 i = 0
