@@ -129,23 +129,25 @@
 <h1 id="working-with-lists-and-tuples">Working with lists and tuples</h1>
 <h2 id="tuples">Tuples</h2>
 <p>Similar to lists, but their values can’t be modified</p>
-<pre><code class="language-py">numbers = (10, 30, 50, 70)
+<pre><code class="py">numbers = (10, 30, 50, 70)
 print(numbers[2])
 
 # TypeError: 'tuple' object does not support item assignment
 numbers[2] = 55
 </code></pre>
+
 <p>A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these. Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma (it is not sufficient to enclose a single value in parentheses). Ugly, but effective. For example:</p>
-<pre><code class="language-py">empty = ()
+<pre><code class="py">empty = ()
 singleton = 'hello',    # &lt;-- note trailing comma
 len(empty) 
 # 0
 len(singleton)
 # ('hello',)
 </code></pre>
+
 <h2 id="the-for-statement">The "for" statement</h2>
 <p>Python's for statement iterates over the items of any sequence (e.g., strings, lists, tuples), in the order that they appear in the sequence.</p>
-<pre><code class="language-py"># What is the thickness of a sheet of paper folded 10 times?
+<pre><code class="py"># What is the thickness of a sheet of paper folded 10 times?
 
 times = [1,2,3,4,5,6,7,8,9,10]
 thickness = 0.1
@@ -154,8 +156,9 @@ for i in times:
 print(thickness)
 # 102.4
 </code></pre>
+
 <p>If you do need to iterate over a sequence of numbers, the built-in function <code>range()</code> comes in handy. It generates arithmetic progressions.</p>
-<pre><code class="language-py"># What is the thickness of a sheet of paper folded 39 times?
+<pre><code class="py"># What is the thickness of a sheet of paper folded 39 times?
 
 thickness = 0.1
 for i in range(39):
@@ -164,8 +167,9 @@ print(thickness)
 # 54975581388.8 cm = 549755.813888 Km
 # Which is more than the distance between the Earth and the Moon (384400 Km)
 </code></pre>
+
 <p>The given end point is never part of the generated sequence; <code>range(10)</code> generates 10 values, the legal indices for items of a sequence of length 10. It is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the 'step'):</p>
-<pre><code class="language-py">list(range(5, 10))
+<pre><code class="py">list(range(5, 10))
 # [5, 6, 7, 8, 9]
 
 list(range(0, 10, 3))
@@ -174,10 +178,11 @@ list(range(0, 10, 3))
 list(range(-10, -100, -30))
 # [-10, -40, -70]
 </code></pre>
+
 <h3 id="the-while-statement">The "while" statement</h3>
 <p>The while statement is used for repeated execution as long as an expression is true.</p>
 <p>We generally use this loop when we don't know the number of times to iterate beforehand.</p>
-<pre><code class="language-py">distance_earth_moon = 38440000000
+<pre><code class="py">distance_earth_moon = 38440000000
 thickness = 0.1
 times = 0
 while thickness &lt; distance_earth_moon:
@@ -186,17 +191,18 @@ while thickness &lt; distance_earth_moon:
 print(times)
 # 39
 </code></pre>
+
 <p>Make sure that the while loop condition becomes false at some point, otherwise, the loop will continue forever (or until the PC crashes or the laptop battery runs out)</p>
 <h2 id="exercises">Exercises</h2>
 <h3 id="1st-exercise">1st Exercise</h3>
 <p>Let's pretend we have a list containing the titles of all the Computational Thinking lessons. The list is ordered following the established schedule. Below is the list:</p>
-<pre><code class="language-py">ctp_lessons = [&quot;Introduction to the course&quot;,&quot;Introduction to Computational Thinking&quot;,&quot;Algorithms&quot;,&quot;Laboratory&quot;,&quot;Computability&quot;,&quot;Programming languages&quot;,&quot;Organising information: ordered structures&quot;,&quot;Laboratory&quot;,&quot;Brute-force algorithms&quot;,&quot;Laboratory&quot;,&quot;Organising information: unordered structures&quot;,&quot;Laboratory&quot;,&quot;Recursion&quot;,&quot;Laboratory&quot;,&quot;Divide and conquer algorithms&quot;,&quot;Laboratory&quot;,&quot;Dynamic programming algorithms&quot;,&quot;Organising information: trees&quot;,&quot;Backtracking algorithms&quot;,&quot;Organising information: graphs&quot;,&quot;Greedy algorithms&quot;]
+<pre><code class="py">ctp_lessons = [&quot;Introduction to the course&quot;,&quot;Introduction to Computational Thinking&quot;,&quot;Algorithms&quot;,&quot;Laboratory&quot;,&quot;Computability&quot;,&quot;Programming languages&quot;,&quot;Organising information: ordered structures&quot;,&quot;Laboratory&quot;,&quot;Brute-force algorithms&quot;,&quot;Laboratory&quot;,&quot;Organising information: unordered structures&quot;,&quot;Laboratory&quot;,&quot;Recursion&quot;,&quot;Laboratory&quot;,&quot;Divide and conquer algorithms&quot;,&quot;Laboratory&quot;,&quot;Dynamic programming algorithms&quot;,&quot;Organising information: trees&quot;,&quot;Backtracking algorithms&quot;,&quot;Organising information: graphs&quot;,&quot;Greedy algorithms&quot;]
 </code></pre>
-<p><strong>1.a)</strong> Define a function named <code class="py">lab_lessons()</code> which takes <code class="py">ctp_lessons</code> as a parameter and returns the total number of <code class="py">"Laboratory"</code> lessons.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1a')">Show solution</button></p>
-<div class="solution-code" id="sol_3_1a">
 
-<pre><code class="language-py">def lab_lessons(a_list):
+<p><strong>1.a)</strong> Define a function named <code class="py">lab_lessons()</code> which takes <code class="py">ctp_lessons</code> as a parameter and returns the total number of <code class="py">"Laboratory"</code> lessons.</p>
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1a')">Show solution</button>
+<div class="solution-code" id="sol_3_1a"></p>
+<pre><code class="py">def lab_lessons(a_list):
     count = 0
     for title in a_list:
         if title == &quot;Laboratory&quot;:
@@ -207,10 +213,9 @@ print(times)
 </div>
 
 <p><strong>1.b)</strong> Define a function named <code class="py">all_before_lab()</code> which takes <code class="py">ctp_lessons</code> as a parameter and returns a list containing all the lessons scheduled before the first <code class="py">"Laboratory"</code> lesson.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1b')">Show solution</button></p>
-<div class="solution-code" id="sol_3_1b">
-
-<pre><code class="language-py">def all_before_lab(a_list):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1b')">Show solution</button>
+<div class="solution-code" id="sol_3_1b"></p>
+<pre><code class="py">def all_before_lab(a_list):
   result = []
   i = 0
   title = a_list[i]
@@ -224,13 +229,14 @@ print(times)
 </div>
 
 <p><strong>1.c)</strong> Let's pretend we have a new list representing an extended version of the <code class="py">ctp_lessons</code>, such that it embeds information about the date, time and the duration (in hours) of the each lesson. We call the new list <code class="py">ctp_lessons_extended</code>. Each element is represented as a tuple: <code class="py">([HOURS],[DATE],[TIME],[TITLE])</code>. For instance, the third lesson "Algorithms" will have the corresponding tuple: <code class="py">(2,"15/10/21","12:30-14:30","Algorithms")</code>. Here we have the entire <code class="py">ctp_lessons_extended</code>:</p>
-<pre><code class="language-py">ctp_lessons_extended = [(2,&quot;12/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Introduction to the course&quot;),(2,&quot;14/10/22&quot;,&quot;12:30-14:30 &quot;,&quot;Introduction to Computational Thinking&quot;),(2,&quot;17/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Algorithms&quot;),(2,&quot;19/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;21/10/22&quot;,&quot;12:30-14:30&quot;,&quot;Computability&quot;),(2,&quot;24/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Programming languages&quot;),(2,&quot;26/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;28/10/22&quot;,&quot;12:30-14:30&quot;,&quot;Organising information: ordered structures&quot;),(2,&quot;09/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Brute-force algorithms&quot;),(2,&quot;11/11/22&quot;,&quot;12:30-14:30&quot;,&quot;Laboratory&quot;),(2,&quot;14/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: unordered structures&quot;),(2,&quot;16/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;21/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Recursion&quot;),(2,&quot;23/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Divide and conquer algorithms&quot;),(2,&quot;28/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;30/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Dynamic programming algorithms&quot;),(2,&quot;05/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;12/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: trees&quot;),(2,&quot;14/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Backtracking algorithms&quot;),(2,&quot;19/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: graphs&quot;),(2,&quot;21/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Greedy algorithms&quot;)]
+<pre><code class="py">ctp_lessons_extended = [(2,&quot;12/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Introduction to the course&quot;),(2,&quot;14/10/22&quot;,&quot;12:30-14:30 &quot;,&quot;Introduction to Computational Thinking&quot;),(2,&quot;17/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Algorithms&quot;),(2,&quot;19/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;21/10/22&quot;,&quot;12:30-14:30&quot;,&quot;Computability&quot;),(2,&quot;24/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Programming languages&quot;),(2,&quot;26/10/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;28/10/22&quot;,&quot;12:30-14:30&quot;,&quot;Organising information: ordered structures&quot;),(2,&quot;09/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Brute-force algorithms&quot;),(2,&quot;11/11/22&quot;,&quot;12:30-14:30&quot;,&quot;Laboratory&quot;),(2,&quot;14/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: unordered structures&quot;),(2,&quot;16/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;21/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Recursion&quot;),(2,&quot;23/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Divide and conquer algorithms&quot;),(2,&quot;28/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;30/11/22&quot;,&quot;09:30-11:30&quot;,&quot;Dynamic programming algorithms&quot;),(2,&quot;05/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Laboratory&quot;),(2,&quot;12/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: trees&quot;),(2,&quot;14/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Backtracking algorithms&quot;),(2,&quot;19/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Organising information: graphs&quot;),(2,&quot;21/12/22&quot;,&quot;09:30-11:30&quot;,&quot;Greedy algorithms&quot;)]
 </code></pre>
+
 <p>Define a function <code class="py">max_lessons_hours()</code> which takes <code class="py">ctp_lessons_extended</code> and a number <code class="py">max_hours</code> as parameters, and returns a list containing only the titles of all the lessons which could be attended with a maximum number of hours = <code class="py">max_hours</code>, starting from the first lesson of the year.</p>
 <p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1c')">Show solution</button></p>
 <div class="solution-code" id="sol_3_1c">
 
-<pre><code class="language-py">def max_lessons_hours(a_list, max_hours):
+<pre><code class="py">def max_lessons_hours(a_list, max_hours):
     result = []
     tot_hours = 0
     i = 0
@@ -246,10 +252,9 @@ print(times)
 
 <p><strong>1.d)</strong> One of the students attending the course, Tim Berners Lee, thinks he knows enough about the materials taught in the course, so he will take a break and go on a vacation on 11/11/22 for two weeks. Right after that, when he returns, he will attend the lectures again, starting from the first available one according to the schedule until the end of the course. Write down a portion of the code that prints the titles of the lectures that Tim Berners Lee will attend at the end of the course.</p>
 <p><strong>Hint:</strong> take a look at the <code>datetime</code> library</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1d')">Show solution</button></p>
-<div class="solution-code" id="sol_3_1d">
-
-<pre><code class="language-py">from datetime import datetime
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3_1d')">Show solution</button>
+<div class="solution-code" id="sol_3_1d"></p>
+<pre><code class="py">from datetime import datetime
 
 vacation_date = datetime.strptime(&quot;11/11/22&quot;, '%d/%m/%y')
 back_date = vacation_date + datetime.timedelta(weeks=2)

@@ -165,10 +165,9 @@
 <h2 id="1st-exercise-read-the-dataset">1st Exercise – read the dataset</h2>
 <p>Open the <span class="dir">netflix_analysis/util.py</span> file and define the following functions:  </p>
 <p><strong>1.a)</strong> <code class="py">csv_to_matrix()</code> which takes the PATH of a CSV file <code class="py">f_path</code> and returns a matrix (list of lists) representing the CSV contents without including the first row of the CSV (the header).</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1a')">Show solution</button></p>
-<div class="solution-code" id="sol_6_1a">
-
-<pre><code class="language-py">def csv_to_matrix(f_path):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1a')">Show solution</button>
+<div class="solution-code" id="sol_6_1a"></p>
+<pre><code class="py">def csv_to_matrix(f_path):
     result = []
     with open(f_path, mode='r') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -183,10 +182,9 @@
 <p><strong>1.b)</strong> <code class="py">csv_to_list_of_dict()</code> which takes the PATH of a CSV file <code class="py">f_path</code> and returns a list of dictionaries which represents the CSV contents, such that each element of the list (i.e. a dictionary) represents a row of the CSV. The pairs key-value of the dictionary represents respectively the name of the column and the corresponding value in the cell.<br />
 <strong>Example:</strong><code>[ {"name": "James", "age": 25}, {"name":"David", "age": 28} ]</code><br />
 <strong>Hint:</strong> the function <code>csv.DictReader(csv_file)</code> reads a CSV file and returns a DictReader object, each element of the new object (i.e., a row) is represented as dictionary</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1b')">Show solution</button></p>
-<div class="solution-code" id="sol_6_1b">
-
-<pre><code class="language-py">def csv_to_list_of_dict(f_path):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_1b')">Show solution</button>
+<div class="solution-code" id="sol_6_1b"></p>
+<pre><code class="py">def csv_to_list_of_dict(f_path):
     result = []
     with open(f_path, mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
@@ -204,10 +202,9 @@
 <li>b) The total number of Italian movies and the total number of Italian tv shows.</li>
 <li>c) The number of Italian shows for each different year of their release</li>
 </ul>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_2')">Show solution</button></p>
-<div class="solution-code" id="sol_6_2">
-
-<pre><code class="language-py">import csv
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_2')">Show solution</button>
+<div class="solution-code" id="sol_6_2"></p>
+<pre><code class="py">import csv
 from util import *
 netflix_data = csv_to_list_of_dict(&quot;netflix_analysis/data/netflix_titles.csv&quot;)
 # a ----
@@ -244,10 +241,9 @@ for ita_show in italian_shows:
 <li>a) Detects the director with the higher number of shows and prints his name</li>
 <li>b) Creates an index that contains all the countries, and for each country the number of shows classified according to the genere of the show (e.g., Comedies, Documentaries, etc)  </li>
 </ul>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_3')">Show solution</button></p>
-<div class="solution-code" id="sol_6_3">
-
-<pre><code class="language-py">from util import *
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6_3')">Show solution</button>
+<div class="solution-code" id="sol_6_3"></p>
+<pre><code class="py">from util import *
 netflix_data = csv_to_list_of_dict(&quot;netflix_analysis/data/netflix_titles.csv&quot;)
 # a ----
 directors_index = dict()

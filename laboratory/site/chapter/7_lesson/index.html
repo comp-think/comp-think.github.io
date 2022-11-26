@@ -109,7 +109,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#toward-a-text-analysis-of-the-netflix-shows-dataset-see-also-the-github-repository" class="nav-link">Toward a text analysis of the Netflix shows dataset (see also the github repository)</a>
+            <li class="nav-item" data-level="2"><a href="#toward-a-text-analysis-of-the-netflix-shows-dataset-see-also-the-github-repository" class="nav-link">Toward a text analysis of the Netflix shows dataset wzxhzdk:45(see also the github repository)wzxhzdk:46</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -121,8 +121,8 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="data-analysis-of-the-netflix-shows-part-2">Data analysis of the Netflix shows - part 2</h1>
-<h5 id="date-04122020">Date: 04/12/2020</h5>
-<h5 id="time-1230-1430">Time: 12:30-14:30</h5>
+<h5>Date: 04/12/2020</h5>
+<h5>Time: 12:30-14:30</h5>
 <h2 id="text-analysis">Text analysis</h2>
 <p>Natural Language Processing (NLP) is about developing applications and services that can understand human languages.
 Nowadays we have millions of gigabytes of data generated every day by blogs, social websites, and web pages. A big data analysis using NLP applications can turn out to be very beneficial. Possible NLP applications are speech recognition/translation, semantic analysis of the words, the syntactical/grammatical analysis of the sentences and paragraphs, and others. The analysis of the text is a common and main task in NLP.
@@ -164,22 +164,20 @@ If you still have some errors please follow these instructions <a href="https://
 
 <h2 id="tokenization-and-stopwords-removal">Tokenization and stopwords removal</h2>
 <p>First thing we want to do is a <strong>Tokenization</strong> and <strong>Stopwords removal</strong>.</p>
-<p><strong>Tokenization</strong> is the process of separating and classifying different sections of a string. The resulting tokens are then passed on to some other form of processing.</p>
+<p><strong>Tokenization</strong> is the process of separating and classifying different sections of a string. The resulting tokens are then passed on to some other form of processing.
 <div class="a-box notes-box">
 <b>For example:</b><br><br>
-If we want to tokenize the sentence <br><b><i>"Hi I am Marco and I am a DHDK student"</i></b><br><br>    
+If we want to tokenize the sentence <br><b><i>"Hi I am Marco and I am a DHDK student"</i></b><br><br>  <br />
 Our list of tokens would be:<br><i><b>"Hi", "I", "am", "Marco", "and", "I", "am", "a", "DHDK", "student"</b></i>
-</div>
-
-<p><strong>Stopwords removal</strong> these are words that may not carry any valuable information, like articles (e.g. "the"), conjunctions (e.g. "and"), or propositions (e.g. "with").</p>
+</div></p>
+<p><strong>Stopwords removal</strong> these are words that may not carry any valuable information, like articles (e.g. "the"), conjunctions (e.g. "and"), or propositions (e.g. "with").
 <div class="a-box notes-box">
 <b>For example:</b><br><br>
 If we want to remove the stop words from the list of tokens <br><i><b>"Hi", "I", "am", "Marco", "and", "I", "am", "a", "DHDK", "student"</b></i> <br><br>
 Then our new list could be:<br> <i><b>"Hi", "Marco", "DHDK", "student"</b></i>
-</div>
-
+</div></p>
 <h2 id="toward-a-text-analysis-of-the-netflix-shows-dataset-see-also-the-github-repository">Toward a text analysis of the Netflix shows dataset <span class="inline-header">(see also the <a href="https://github.com/comp-think/2020-2021/tree/master/docs/laboratory/src/lessons/6_7">github repository</a>)</span></h2>
-<p>Lets see an example in python first</p>
+<p>Lets see an example in python first
 <div class="py-hint-box large">
 <div class="code-sec large">
 <span>from nltk.corpus import stopwords</span><hr>
@@ -198,10 +196,9 @@ Then our new list could be:<br> <i><b>"Hi", "Marco", "DHDK", "student"</b></i>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filtered_sentence.append(w)</span><hr>
 <span></span><hr>
 <span>print(filtered_sentence</span><hr>
-</div>  
-</div>
-
-<p><span class="inline-header">a)</span> define a function <code class="py">netflix_titles_tokens()</code> which returns a collection of all the different tokens/words in the Netflix shows titles. The collection should not include the stopwords.</p>
+</div><br />
+</div></p>
+<p><span class="inline-header">a)</span> define a function <code class="py">netflix_titles_tokens()</code> which returns a collection of all the different tokens/words in the Netflix shows titles. The collection should not include the stopwords.
 <div class="py-hint-box large">
   Mark the box to see the solution
   <div class="code-sec large solution">
@@ -222,20 +219,16 @@ Then our new list could be:<br> <i><b>"Hi", "Marco", "DHDK", "student"</b></i>
   <span></span><hr>
   <span>print(netflix_titles_tokens())</span><hr>
   </div>
-</div>
-
-<p><span class="inline-header">b)</span> define a function <code class="py">netflix_director_names()</code> which returns a collection of all the tokens/words included in the director field of the Netflix shows dataset. Each token must be accompanied with a number representing its frequency in the dataset.</p>
+</div></p>
+<p><span class="inline-header">b)</span> define a function <code class="py">netflix_director_names()</code> which returns a collection of all the tokens/words included in the director field of the Netflix shows dataset. Each token must be accompanied with a number representing its frequency in the dataset.
 <div class="a-box notes-box">
 <b>Hint:</b><br>
 Importing <code class="py">from nltk.probability import FreqDist</code> and using <code class="py">FreqDist({LIST_OF_TOKENS})</code> returns a dictionary, such that the dictionary key is a token and its value is the number of times it appears in the given list. To print the results you can use
 <code class="py">{FREQ_DIST_DICT}.most_common({N})</code>, this function prints the {N} most frequent terms inside the dictionary {FREQ_DIST_DICT}.
-<br><br>
-
-<b>For example:</b><br>
-<code class="py">FreqDist(["hi","bye","ciao","bye","hi"])</code> returns <code class="py">{"hi": 2, "bye":2, "ciao": 1}</code>
-
-</div>
-
+<br><br></p>
+<p><b>For example:</b><br>
+<code class="py">FreqDist(["hi","bye","ciao","bye","hi"])</code> returns <code class="py">{"hi": 2, "bye":2, "ciao": 1}</code></p>
+<p></div>  </p>
 <div class="py-hint-box large">
   Mark the box to see the solution
   <div class="code-sec large solution">

@@ -141,16 +141,18 @@
 <ul>
 <li>In Python, a variable is created when you first assign a value to it</li>
 </ul>
-<pre><code class="language-py">planet = 'Jupiter'
+<pre><code class="py">planet = 'Jupiter'
 </code></pre>
+
 <ul>
 <li>The name of a variable cannot start with a digit or contain a special symbol (e.g., <code>|£$%@#</code>)</li>
 <li>Some keywords cannot be used for naming variables.</li>
 </ul>
-<pre><code class="language-py">False | class | finally | is | return | None | continue | for | lambda | try | True | def
+<pre><code class="py">False | class | finally | is | return | None | continue | for | lambda | try | True | def
 from | nonlocal | while | and | del | global | not | with | as | elif | if | or
 yield | assert | else | import | pass | break | except | in | raise
 </code></pre>
+
 <ul>
 <li>Python is case-sensitive: <code>planet</code> and <code>Planet</code> are different variables</li>
 </ul>
@@ -163,53 +165,59 @@ yield | assert | else | import | pass | break | except | in | raise
 <img src="../img/naming_convention.png">  </li>
 </ul>
 <p><strong>Python naming convention</strong></p>
-<p>The <a href="https://peps.python.org/pep-0008/#naming-conventions" target="_blank" alt="pep-8 and Python naming conventions">Python Enhancement Proposal number 8 (PEP 8)</a> states:</p>
+<p>The <a href="https://peps.python.org/pep-0008/#naming-conventions" target="_blank" alt="pep-8 and Python naming conventions">Python Enhancement Proposal number 8 (PEP 8)</a> states:
 <div class="note">
 Function names should be lowercase, with words separated by underscores as necessary to improve readability.  Variable names follow the same convention as function names.
-</div>
-
+</div></p>
 <p>Use names that make sense: <code>planet = 'Jupiter'</code> rather than <code>p = 'Jupiter'</code></p>
 <h3 id="punctuation-and-indentation">Punctuation and indentation</h3>
 <p>You don't need to add punctuation at the end of lines</p>
-<pre><code class="language-py">planet = 'Jupiter'
+<pre><code class="py">planet = 'Jupiter'
 position_from_sun = 5
 </code></pre>
+
 <p>Use semicolons in case you want to put multiple statements in a single line</p>
-<pre><code class="language-py">planet = 'Jupiter' ; position_from_sun = 5
+<pre><code class="py">planet = 'Jupiter' ; position_from_sun = 5
 </code></pre>
+
 <p>Document your code using comments</p>
-<pre><code class="language-py"># this is the first comment
+<pre><code class="py"># this is the first comment
 planet = 'Jupiter'  # and this is the second comment
           # ... and now a third!
 text = &quot;# This is not a comment because it's inside quotes.&quot;
 </code></pre>
+
 <h3 id="data-types">Data types</h3>
-<h4 id="numbers">Numbers</h4>
-<pre><code class="language-py"># Integers
+<h4>Numbers</h4>
+<pre><code class="py"># Integers
 known_satellites = 80
 
 # Floating point numbers
 hydrogen_percentage = 0.89
 </code></pre>
+
 <p>The <code>int()</code> and <code>float()</code> methods convert booleans, numbers and number-like strings to integers and floating point numbers</p>
-<pre><code class="language-py">known_satellites = int('80')
+<pre><code class="py">known_satellites = int('80')
 # 80
 the_world_is_flat = float(True)
 # 1.0
 the_world_is_flat = float(False)
 # 0.0
 </code></pre>
-<h4 id="strings">Strings</h4>
-<pre><code class="language-py">planet = 'Jupiter' # This is a string
+
+<h4>Strings</h4>
+<pre><code class="py">planet = 'Jupiter' # This is a string
 </code></pre>
+
 <p>The <code>str()</code> method returns the string representation of a given object</p>
-<pre><code class="language-py">known_satellites = str(80)
+<pre><code class="py">known_satellites = str(80)
 # Use the type() function to return the type of the object
 print(type(known_satellites))
 # &lt;class 'str'&gt;
 </code></pre>
-<h4 id="lists">Lists</h4>
-<pre><code class="language-py"># You can initialise an empty list with the list() method
+
+<h4>Lists</h4>
+<pre><code class="py"># You can initialise an empty list with the list() method
 planets = list()
 # Or using square brackets
 planets = []
@@ -230,9 +238,10 @@ planets.append('Neptune')
 # Count how many elements we have in a list
 planets_count = len(planets) # 8
 </code></pre>
+
 <h3 id="string-interpolation">String interpolation</h3>
 <p><em>String interpolation</em> is the process of substituting values of variables into placeholders in a string</p>
-<pre><code class="language-py">print(&quot;The fifth planet is %s&quot; %(planets[4]))
+<pre><code class="py">print(&quot;The fifth planet is %s&quot; %(planets[4]))
 
 print(&quot;The fifth planet is {}&quot;.format(planets[4]))
 
@@ -240,9 +249,10 @@ print(f&quot;The fifth planet is {planets[4]}&quot;)
 
 # The fifth planet is Jupiter
 </code></pre>
+
 <h2 id="operators">Operators</h2>
-<h4 id="arithmetic-operators">Arithmetic operators</h4>
-<pre><code class="language-py">x = 5
+<h4>Arithmetic operators</h4>
+<pre><code class="py">x = 5
 y = 2
 
 # + Add two operands
@@ -266,8 +276,9 @@ print(x % y) # 1
 # // Discard the fractional part of the division's result. It is called floor division
 print(x // y) # 2
 </code></pre>
-<h4 id="comparison-operators">Comparison operators</h4>
-<pre><code class="language-py">x = 5
+
+<h4>Comparison operators</h4>
+<pre><code class="py">x = 5
 y = 2
 
 # &gt; Greater than - True if the left operand is greater than the right one
@@ -288,12 +299,13 @@ print(x &gt;= y) # True
 # &lt;= Less than or equal to - True if the left operand is less than or equal to the right one
 print(x &lt;= y) # False
 </code></pre>
+
 <div class="note">
 <strong>Note the difference</strong>: <code>=</code> is an assignment operator, used to assign a value to a variable. Conversely, <code>==</code> is a Boolean operator that checks whether the right operand is equal to the left one
 </div>
 
-<h4 id="logic-operators">Logic operators</h4>
-<pre><code class="language-py">x = True
+<h4>Logic operators</h4>
+<pre><code class="py">x = True
 y = False
 
 # &quot;and&quot;: True if both the operands are true
@@ -305,8 +317,9 @@ print(x or y) # True
 # &quot;not&quot;: True if the operand is False and viceversa
 print(not x) # False
 </code></pre>
-<h4 id="assignment-operators">Assignment operators</h4>
-<pre><code class="language-py"># with &quot;=&quot;
+
+<h4>Assignment operators</h4>
+<pre><code class="py"># with &quot;=&quot;
 x = 5
 print(x)
 
@@ -320,8 +333,9 @@ print(x)
 
 # Try with other arithmetic operands ...
 </code></pre>
-<h4 id="membership-operators">Membership operators</h4>
-<pre><code class="language-py">planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus']
+
+<h4>Membership operators</h4>
+<pre><code class="py">planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus']
 
 # &quot;in&quot;: True if value/variable is found in the sequence
 print('Pluto' in planets) # False
@@ -329,17 +343,19 @@ print('Pluto' in planets) # False
 # &quot;not in&quot;: True if value/variable is not found in the sequence
 print('Moon' not in planets) # True
 </code></pre>
+
 <h2 id="conditional-statement">Conditional statement</h2>
 <p>A decision might be taken only when a specific condition is satisfied</p>
-<pre><code class="language-py">the_world_is_flat = True
+<pre><code class="py">the_world_is_flat = True
 if the_world_is_flat:
   print(&quot;Be careful not to fall off!&quot;)
 </code></pre>
+
 <p>Use indentation to separate <strong>code blocks</strong> by pressing the <img src="../img/tab_key.png" height="50"> key. </p>
 <p>A block is a piece of Python program text that is executed as a unit, i.e., a conditional statement or a function body</p>
 <h2 id="functions">Functions</h2>
 <p>A block of code which defines a specific algorithm and runs only when it is called</p>
-<pre><code class="language-py"># def {func_name}({parameter_1}, {parameter_2}, ...):
+<pre><code class="py"># def {func_name}({parameter_1}, {parameter_2}, ...):
   # {func_body}
 def add(num1, num2):
     return num1 + num2
@@ -347,15 +363,15 @@ def add(num1, num2):
 my_sum = add(5,4)
 print(my_sum) # 9
 </code></pre>
+
 <h2 id="exercises">Exercises</h2>
 <h3 id="1st-exercise">1st Exercise</h3>
 <p>The function <code>is_friend_of_harry()</code> returns a <em>True</em> value if a given name (i.e. type string) is one of the friends of Harry Potter, otherwise the function returns <em>False</em>. Let's pretend the friends of Harry Potter are: <em>"Ron", "Hermione", "Hagrid",</em> and <em>"Dumbledore"</em>.   </p>
 <p><strong>Example:</strong> calling the function <code>is_friend_of_harry("Malfoy")</code> returns <em>False</em>.</p>
 <p><span class="ex-part"> <strong>1.a)</strong> Define the function <code>is_friend_of_harry()</code>, and call it for each one of the following characters: <em>"Hagrid", "Voldemort",</em> and <em>"Bellatrix"</em>. Print the result (i.e. <em>True/False</em>) of each call. </span></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_1')">Show solution</button></p>
-<div class="solution-code" id="sol_1">
-
-<pre><code class="language-py">def is_friend_of_harry(name):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_1')">Show solution</button>
+<div class="solution-code" id="sol_1"></p>
+<pre><code class="py">def is_friend_of_harry(name):
   friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
   if name in friends_list:
     return True
@@ -369,10 +385,9 @@ print(is_friend_of_harry(&quot;Bellatrix&quot;))
 </div>
 
 <p><span class="ex-part"> <strong>1.b)</strong> Write a portion of code that prints <em>"Harry has friends!"</em> if at least one of the previous characters is a friend of Harry, otherwise, print <em>"Harry has no friends!"</em>. </span></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2')">Show solution</button></p>
-<div class="solution-code" id="sol_2">
-
-<pre><code class="language-py">is_hagrid_friend = is_friend_of_harry(&quot;Hagrid&quot;)
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2')">Show solution</button>
+<div class="solution-code" id="sol_2"></p>
+<pre><code class="py">is_hagrid_friend = is_friend_of_harry(&quot;Hagrid&quot;)
 is_voldemort_friend = is_friend_of_harry(&quot;Voldemort&quot;)
 is_bellatrix_friend = is_friend_of_harry(&quot;Bellatrix&quot;)
 if is_hagrid_friend or is_voldemort_friend or is_bellatrix_friend:
@@ -390,10 +405,9 @@ else:
 <li>c) The name has both (a) and (b) cases combined in it (e.g. "   roN")</li>
 </ul>
 <p><strong>Hint:</strong> in python <code>{string}.lower()</code> transforms a string to its lowercase form; <code>{string}.strip()</code> removes the starting and ending whitespaces (if any); and <code>{string}.capitalize()</code> capitalizes the first letter of a string </span></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3')">Show solution</button></p>
-<div class="solution-code" id="sol_3">
-
-<pre><code class="language-py">def is_friend_of_harry(name):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_3')">Show solution</button>
+<div class="solution-code" id="sol_3"></p>
+<pre><code class="py">def is_friend_of_harry(name):
   friends_list = [&quot;Ron&quot;, &quot;Hermione&quot;, &quot;Hagrid&quot;, &quot;Dumbledore&quot;]
   name = name.lower()
   name = name.strip()
@@ -407,10 +421,9 @@ else:
 </div>
 
 <p><span class="ex-part"> <strong>1.d)</strong> Define another function <code>is_prof_friend_of_harry()</code> which returns a <em>True</em> value if a given name, which might be written in any format described (1.c), is a professor and a friend of Harry, otherwise the function must return <em>False</em>. The function should call the improved version of the function <code>is_friend_of_harry()</code> in its code (i.e. defined in (1.c)). Let's pretend the professors of Harry Potter are: <em>"Snape", "Umbridge", and "Hagrid"</em>.</span></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4')">Show solution</button></p>
-<div class="solution-code" id="sol_4">
-
-<pre><code class="language-py">def is_prof_friend_of_harry(name):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_4')">Show solution</button>
+<div class="solution-code" id="sol_4"></p>
+<pre><code class="py">def is_prof_friend_of_harry(name):
   prof_list = [&quot;Snape&quot;, &quot;Umbridge&quot;, &quot;Hagrid&quot;]
   name = name.lower()
   name = name.strip()
@@ -435,10 +448,9 @@ print(is_prof_friend_of_harry(&quot;  hagrid&quot;))
 <p><strong>2.a)</strong> Define the function <code>update_house_score()</code> which increments/decrements the score of a specific house with a given value of points. The function takes three parameters: <code>house_name</code>, <code>action</code>, and <code>points</code>. The value of <code>action</code> is a string which is either <em>"+"</em>(points will be added) or <em>"-"</em> (points will be subtracted)<br />
 <strong>Example:</strong> Calling the function this way: <code class="py">update_house_score("Gryffindor", "+", 5)</code> should increment the score of house Gryffindor by 5 points.<br />
 <strong>Hint:</strong> The function <code class="py">{list}.index({value})</code> returns the index of an element in the list, e.g. <code class="py">houses.index("Hufflepuff")</code> returns the value <em>1</em></p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5')">Show solution</button></p>
-<div class="solution-code" id="sol_5">
-
-<pre><code class="language-py">houses = [&quot;Gryffindor&quot;, &quot;Hufflepuff&quot;, &quot;Ravenclaw&quot;, &quot;Slytherin&quot;]
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_5')">Show solution</button>
+<div class="solution-code" id="sol_5"></p>
+<pre><code class="py">houses = [&quot;Gryffindor&quot;, &quot;Hufflepuff&quot;, &quot;Ravenclaw&quot;, &quot;Slytherin&quot;]
 scores = [0,0,0,0]
 def update_house_score(house_name, action, points):
   house_index = houses.index(house_name)
@@ -451,10 +463,9 @@ def update_house_score(house_name, action, points):
 </div>
 
 <p><strong>2.b)</strong> After the Quidditch cup the Houses have increased/decreased their scores: +10 Gryffindor, +7 Hufflepuff, -3 Slytherin. After the end of the game a member of house "Slytherin" helped a man riding his broom, so his house gained back 5 points. Call the function <code>update_house_score()</code> for each action in order to update the houses points and print the two lists: <code>houses</code> and <code>scores</code>.</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6')">Show solution</button></p>
-<div class="solution-code" id="sol_6">
-
-<pre><code class="language-py">update_house_score(&quot;Gryffindor&quot;, &quot;+&quot;, 10)
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_6')">Show solution</button>
+<div class="solution-code" id="sol_6"></p>
+<pre><code class="py">update_house_score(&quot;Gryffindor&quot;, &quot;+&quot;, 10)
 update_house_score(&quot;Hufflepuff&quot;, &quot;+&quot;, 7)
 update_house_score(&quot;Slytherin&quot;, &quot;-&quot;, 3)
 update_house_score(&quot;Slytherin&quot;, &quot;+&quot;, 5)
@@ -465,10 +476,9 @@ print(scores)
 </div>
 
 <p><strong>2.c)</strong> redefine <code>update_house_score()</code> using the function <code>eval()</code> (<a href="https://docs.python.org/3/library/functions.html#eval">https://docs.python.org/3/library/functions.html#eval</a>)</p>
-<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2_2c')">Show solution</button></p>
-<div class="solution-code" id="sol_2_2c">
-
-<pre><code class="language-py">def update_house_score(house_name, action, points):
+<p><button class="toggle-solution btn btn-light" onclick="toggle_click(this,'sol_2_2c')">Show solution</button>
+<div class="solution-code" id="sol_2_2c"></p>
+<pre><code class="py">def update_house_score(house_name, action, points):
     house_index = houses.index(house_name)
     scores[house_index] = eval(str(points) + action + str(scores[house_index]))
     return scores
