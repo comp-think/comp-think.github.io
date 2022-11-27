@@ -273,7 +273,7 @@ for i in range(0,100):
   random.shuffle(l_of_pokemons)
   pok_winner = pokemon_champion(l_of_pokemons)[0][0]
   if pok_winner not in winners_dict:
-    winners_dict[pok_winner] = 1
+    winners_dict[pok_winner] = 0
   winners_dict[pok_winner] += 1
 print(winners_dict)
 </code></pre>
