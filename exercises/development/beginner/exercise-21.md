@@ -1,7 +1,7 @@
 ## Development - Beginner, exercise 21
 
 ### Text
-Write down a small function in Python that takes in input two strings and returns the number of of characters the two strings have in common.
+Write down a small function in Python that takes in input two strings and returns the number of characters the two strings have in common.
 
 ### Solution
 ```python
