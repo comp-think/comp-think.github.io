@@ -1,7 +1,7 @@
 ## Development - Beginner, exercise 22
 
 ### Text
-Write down a small function in Python that takes in input two floating number (e.g. 19.2 and 3.9) are returns the sum of their integer parts (e.g. 22).
+Write down a small function in Python that takes in input two floating number (e.g. 19.2 and 3.9) and returns the sum of their integer parts (e.g. 22).
 
 ### Solution
 ```python
