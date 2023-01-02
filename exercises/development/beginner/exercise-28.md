@@ -6,8 +6,8 @@ Write down a small function in Python that takes in input a string and a non-neg
 ### Solution
 ```python
 # Test case for the function
-def test_f(i, expected):
-    result = f(i)
+def test_f(s, i, expected):
+    result = f(s, i)
     if expected == result:
         return True
     else:
@@ -15,16 +15,18 @@ def test_f(i, expected):
 
 
 # Code of the function
-def f(i):
-    return i % 2 == 0
+def f(s, i):
+    if i < len(s):
+        return s[i] in "aeiou"
+    else:
+        return False
 
 
 # Tests
-print(test_f(2, True))
-print(test_f(3, False))
-print(test_f(0, True))
-print(test_f(7, False))
-print(test_f(108, True))
+print(test_f("ciao", 2, True))
+print(test_f("ciao", 0, False))
+print(test_f("ciao", 1, True))
+print(test_f("ciao", 7, False))
 ``` 
 
 ### Additional material

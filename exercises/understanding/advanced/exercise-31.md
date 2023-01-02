@@ -1,7 +1,7 @@
 ## Understanding - Advanced, exercise 31
 
 ### Text
-The variable `my_mat` contains the list of integers of a matriculation number with ten digits (e.g. `[0, 2, 3, 5, 1, 4, 5, 3, 9, 8]`), and `my_name` isa string of a given name all in lowercase (e.g. `"john"`). What is the value returned by calling the function sc as shown as follows: `chk(my_name, my_mat)`.
+The variable `my_mat` contains the list of integers of a matriculation number with ten digits (e.g. `[0, 2, 3, 5, 1, 4, 5, 3, 9, 8]`), and `my_name` is a string of a given name all in lowercase (e.g. `"john"`). What is the value returned by calling the function `chk` as shown as follows: `chk(my_name, my_mat)`.
 
 ```python
 def chk(name, mat):
