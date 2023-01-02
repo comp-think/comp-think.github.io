@@ -133,7 +133,7 @@ The exercises of this section focus on creating a Python function according to a
 
 [**IDEA instructions: merge sort**](material/merge-sort.pdf): A nonverbal definition of the merge sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/merge-sort/).
 
-[**IDEA instructions: quick sort**](material/merge-sort.pdf): A nonverbal definition of the quick sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/quick-sort/).
+[**IDEA instructions: quick sort**](material/quick-sort.pdf): A nonverbal definition of the quick sort algorithm, created by Sándor P. Fekete and Sebastian Morr. It is also available in the [IDEA website](https://idea-instructions.com/quick-sort/).
 
 [**Computer Science - Khan Academy**](https://www.khanacademy.org/computing/computer-science): a collection of videos and material introducing several Computer Science concepts, including an entire section on [algorithms](https://www.khanacademy.org/computing/computer-science/algorithms).
 
