@@ -48,7 +48,7 @@ def ann(given_name, family_name):
         for c in family_name:
             if c not in p_char:
                 n_family_name.append(c)
-        print(idx)
+        
         return idx + ann("".join(n_given_name), "".join(n_family_name))
     else:
         return 0
