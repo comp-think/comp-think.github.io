@@ -1,5 +1,7 @@
 # Computational Thinking and Programming
 
+**This web site is not updated anymore. All content has been used to produce the a new book entitled [Think and Compute: a Primer for Digital Humanists](https://thinkcompute.github.io), developed using [Jupyter Book](https://jupyterbook.org), a software to build beautiful, publication-quality HTML books and documents from computational content.**
+
 This is the official book originally written by [Silvio Peroni](https://essepuntato.it) for the [*Computational Thinking and Programming* course](https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/467045) of the [second-cycle degree in *Digital Humanities and Digital Knowledge*](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge) of the [University of Bologna](https://www.unibo.it/en). The intent of this book was to have open and free material to provide to students to learn the basics of Computational Thinking and Code Programming in Python. 
 
 It includes several Python sources, exercises and the related keys. Each chapter starts by introducing an *historic hero* (either computer scientists, writers, philosophers, or computational agents) who is functional to discuss the main topic addressed in the chapter. 
